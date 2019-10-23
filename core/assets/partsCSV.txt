@@ -1,0 +1,629 @@
+Covers;31800100201;Small front cover [Night Sky Shine];22.11;missing
+Covers;31800100202;Small front cover [Night Sky Frosted];22.11;missing
+Covers;31800100203;Small front cover [Fresh Cloud];22.11;missing
+Covers;31800100204;Small front cover [Pure Silver];22.11;missing
+Covers;31800100205;Small front cover [Cherrish];22.11;missing
+Covers;31800100206;Small front cover [Pebble Shine];22.11;missing
+Covers;31800100207;Small front cover [Blossom];22.11;missing
+Covers;31800100208;Small front cover [Drop of Sky];22.11;missing
+Covers;31800100209;Small front cover [Deep Sea];22.11;missing
+Covers;31800100210;Small front cover [Greenetti];22.11;missing
+Covers;31800100211;Small front cover [Tanned];22.11;missing
+Covers;31800100212;Small front cover [Warm Birch];22.11;missing
+Covers;31800100213;Small front cover [Parlemour];22.11;missing
+Covers;31800100214;Small front cover [Off White];22.11;missing
+Covers;31800100215;Small front cover [Forest];22.11;missing
+Covers;31800100216;Small front cover [Sunny Side];22.11;missing
+Covers;31800100217;Small front cover [Fuchsia];22.11;missing
+Covers;31800100218;Small front cover [Fresh Orange];22.11;missing
+Covers;31800100219;Small front cover [Glazy Silver];22.11;missing
+Covers;31800100220;Small front cover [Pacific Splash];22.11;missing
+Covers;31800100221;Small front cover [Pebble Frosted];22.11;missing
+Covers;31800100300;Front mudguard [Unpainted];23.33;missing
+Covers;31800100301;Front mudguard [Night Sky Shine];75;missing
+Covers;31800100302;Front mudguard [Night Sky Frosted];75;missing
+Covers;31800100303;Front mudguard [Fresh Cloud];75;missing
+Covers;31800100304;Front mudguard [Pure Silver];75;missing
+Covers;31800100305;Front mudguard [Cherrish];75;missing
+Covers;31800100306;Front mudguard [Pebble];75;missing
+Covers;31800100307;Front mudguard [Blossom];75;missing
+Covers;31800100308;Front mudguard [Drop of Sky];75;missing
+Covers;31800100309;Front mudguard [Deep Sea];75;missing
+Covers;31800100310;Front mudguard [Greenetti];75;missing
+Covers;31800100311;Front mudguard [Tanned];75;missing
+Covers;31800100312;Front mudguard [Warm Birch];75;missing
+Covers;31800100313;Front mudguard [Parlemour];75;missing
+Covers;31800100314;Front mudguard [Off White];75;missing
+Covers;31800100315;Front mudguard [Forest];75;missing
+Covers;31800100316;Front mudguard [Sunny Side];75;missing
+Covers;31800100317;Front mudguard [Fuchsia];75;missing
+Covers;31800100318;Front mudguard [Fresh Orange];75;missing
+Covers;31800100319;Front mudguard [Glazy Silver];75;missing
+Covers;31800100320;Front mudguard [Pacific Splash];75;missing
+Covers;31800100321;Front mudguard [Pebble Frosted];75;missing
+Covers;31800100400;Lower cover left [Unpainted];08.06;missing
+Covers;31800100401;Lower cover left [Night Sky Shine];0.917361111;missing
+Covers;31800100402;Lower cover left [Night Sky Frosted];0.917361111;missing
+Covers;31800100403;Lower cover left [Fresh Cloud];0.917361111;missing
+Covers;31800100404;Lower cover left [Pure Silver];0.917361111;missing
+Covers;31800100405;Lower cover left [Cherrish];0.917361111;missing
+Covers;31800100406;Lower cover left [Pebble];0.917361111;missing
+Covers;31800100407;Lower cover left [Blossom];0.917361111;missing
+Covers;31800100408;Lower cover left [Drop of Sky];0.917361111;missing
+Covers;31800100409;Lower cover left [Deep Sea];0.917361111;missing
+Covers;31800100410;Lower cover left [Greenetti];0.917361111;missing
+Covers;31800100411;Lower cover left [Tanned];0.917361111;missing
+Covers;31800100412;Lower cover left [Warm Birch];0.917361111;missing
+Covers;31800100413;Lower cover left [Parlemour];0.917361111;missing
+Covers;31800100414;Lower cover left [Off White];0.917361111;missing
+Covers;31800100415;Lower cover left [Forest];0.917361111;missing
+Covers;31800100416;Lower cover left [Sunny Side];0.917361111;missing
+Covers;31800100417;Lower cover left [Fuchsia];0.917361111;missing
+Covers;31800100418;Lower cover left [Fresh Orange];0.917361111;missing
+Covers;31800100419;Lower cover left [Glazy Silver];0.917361111;missing
+Covers;31800100420;Lower cover left [Pacific Splash];0.917361111;missing
+Covers;31800100421;Lower cover left [Pebble Frosted];0.917361111;missing
+Covers;31800100501;Lower cover right [Night Sky Shine];0.917361111;missing
+Covers;31800100502;Lower cover right [Night Sky Frosted];0.917361111;missing
+Covers;31800100503;Lower cover right [Fresh Cloud];0.917361111;missing
+Covers;31800100504;Lower cover right [Pure Silver];0.917361111;missing
+Covers;31800100505;Lower cover right [Cherrish];0.917361111;missing
+Covers;31800100506;Lower cover right [Pebble];0.917361111;missing
+Covers;31800100507;Lower cover right [Blossom];0.917361111;missing
+Covers;31800100508;Lower cover right [Drop of Sky];0.917361111;missing
+Covers;31800100509;Lower cover right [Deep Sea];0.917361111;missing
+Covers;31800100510;Lower cover right [Greenetti];0.917361111;missing
+Covers;31800100511;Lower cover right [Tanned];0.917361111;missing
+Covers;31800100512;Lower cover right [Warm Birch];0.917361111;missing
+Covers;31800100513;Lower cover right [Parlemour];0.917361111;missing
+Covers;31800100514;Lower cover right [Off White];0.917361111;missing
+Covers;31800100515;Lower cover right [Forest];0.917361111;missing
+Covers;31800100516;Lower cover right [Sunny Side];0.917361111;missing
+Covers;31800100517;Lower cover right [Fuchsia];0.917361111;missing
+Covers;31800100518;Lower cover right [Fresh Orange];0.917361111;missing
+Covers;31800100519;Lower cover right [Glazy Silver];0.917361111;missing
+Covers;31800100520;Lower cover right [Pacific Splash];0.917361111;missing
+Covers;31800100521;Lower cover right [Pebble Frosted];0.917361111;missing
+Covers;31800100601;Sidecover left [Night Sky Shine];51.98;missing
+Covers;31800100602;Sidecover left [Night Sky Frosted];51.98;missing
+Covers;31800100603;Sidecover left [Fresh Cloud];51.98;missing
+Covers;31800100604;Sidecover left [Pure Silver];51.98;missing
+Covers;31800100605;Sidecover left [Cherrish];51.98;missing
+Covers;31800100606;Sidecover left [Pebble];51.98;missing
+Covers;31800100607;Sidecover left [Blossom];51.98;missing
+Covers;31800100608;Sidecover left [Drop of Sky];51.98;missing
+Covers;31800100609;Sidecover left [Deep Sea];51.98;missing
+Covers;31800100610;Sidecover left [Greenetti];51.98;missing
+Covers;31800100611;Sidecover left [Tanned];51.98;missing
+Covers;31800100612;Sidecover left [Warm Birch];51.98;missing
+Covers;31800100613;Sidecover left [Parlemour];51.98;missing
+Covers;31800100614;Sidecover left [Off White];51.98;missing
+Covers;31800100615;Sidecover left [Forest];51.98;missing
+Covers;31800100616;Sidecover left [Sunny side];51.98;missing
+Covers;31800100617;Sidecover left (Fuchsia);51.98;missing
+Covers;31800100618;Sidecover left [Fresh Orange];51.98;missing
+Covers;31800100619;Sidecover left [Glazy Silver];51.98;missing
+Covers;31800100620;Sidecover left [Pacific Flash];51.98;missing
+Covers;31800100621;Sidecover left [Pebble Frosted];51.98;missing
+Covers;31800100700;Sidecover right [Unpainted];33.16;missing
+Covers;31800100701;Sidecover right [Night Sky Shine];51.98;missing
+Covers;31800100702;Sidecover right [Night Sky Frosted];51.98;missing
+Covers;31800100703;Sidecover right [Fresh Cloud];51.98;missing
+Covers;31800100704;Sidecover right [Pure Silver];51.98;missing
+Covers;31800100705;Sidecover right [Cherrish];51.98;missing
+Covers;31800100706;Sidecover right [Pebble];51.98;missing
+Covers;31800100707;Sidecover right (Blossom);51.98;missing
+Covers;31800100708;Sidecover right [Drop of Sky];51.98;missing
+Covers;31800100709;Sidecover right [Deep Sea];51.98;missing
+Covers;31800100710;Sidecover right [Greenetti];51.98;missing
+Covers;31800100711;Sidecover right [Tanned];51.98;missing
+Covers;31800100712;Sidecover right [Warm Birch];51.98;missing
+Covers;31800100713;Sidecover right [Parlemour];51.98;missing
+Covers;31800100714;Sidecover right [Off White];51.98;missing
+Covers;31800100715;Sidecover right [Forest];51.98;missing
+Covers;31800100716;Sidecover right [Sunny Side];51.98;missing
+Covers;31800100717;Sidecover right [Fuchsia];51.98;missing
+Covers;31800100718;Sidecover right [Fresh Orange];51.98;missing
+Covers;31800100719;Sidecover right [Glazy Silver];51.98;missing
+Covers;31800100720;Sidecover right [Pacific Splash];51.98;missing
+Covers;31800100721;Sidecover right [Pebble Frosted];51.98;missing
+Covers;31800100800;Swingarm cover [Unpainted];23.52;missing
+Covers;31800100801;Swingarm cover [Night Sky Shine];23.52;missing
+Covers;31800100802;Swingarm cover [Night Sky Frosted];23.52;missing
+Covers;31800100803;Swingarm cover [Fresh Cloud];23.52;missing
+Covers;31800100804;Swingarm cover [Pure Silver];23.52;missing
+Covers;31800100805;Swingarm cover [Cherrish];23.52;missing
+Covers;31800100806;Swingarm cover [Pebble];23.52;missing
+Covers;31800100807;Swingarm cover [Blossom];23.52;missing
+Covers;31800100808;Swingarm cover [Drop of Sky];23.52;missing
+Covers;31800100809;Swingarm cover [Deep Sea];23.52;missing
+Covers;31800100810;Swingarm cover [Greenetti];23.52;missing
+Covers;31800100811;Swingarm cover [Tanned];23.52;missing
+Covers;31800100812;Swingarm cover [Warm Birch];23.52;missing
+Covers;31800100813;Swingarm cover [Parlemour];23.52;missing
+Covers;31800100814;Swingarm cover [Off White];23.52;missing
+Covers;31800100815;Swingarm cover [Forest];23.52;missing
+Covers;31800100816;Swingarm cover [Sunny Side];23.52;missing
+Covers;31800100817;Swingarm cover [Fuchsia];23.52;missing
+Covers;31800100818;Swingarm cover [Fresh Orange];23.52;missing
+Covers;31800100819;Swingarm cover [Glazy Silver];23.52;missing
+Covers;31800100820;Swingarm cover [Pacific Splash];23.52;missing
+Covers;31800100821;Swingarm cover [Pebble Frosted];23.52;missing
+Covers;31800100900;Inner front cover [Black];48.86;missing
+Covers;31800101000;Floor cover [Black];48.56;missing
+Covers;31800101101;Rear cover [Night Sky Shine];42.36;missing
+Covers;31800101102;Rear cover [Night Sky Frosted];29.48;missing
+Covers;31800101103;Rear cover [Fresh Cloud];42.36;missing
+Covers;31800101104;Rear cover [Pure Silver];42.36;missing
+Covers;31800101105;Rear cover [Cherrish];42.36;missing
+Covers;31800101106;Rear cover [Pebble];42.36;missing
+Covers;31800101107;Rear cover [Blossom];42.36;missing
+Covers;31800101108;Rear cover [Drop of Sky];42.36;missing
+Covers;31800101109;Rear cover [Deep Sea];42.36;missing
+Covers;31800101110;Rear cover [Greenetti];42.36;missing
+Covers;31800101111;Rear cover [Tanned];42.36;missing
+Covers;31800101112;Rear cover [Warm Birch];42.36;missing
+Covers;31800101113;Rear cover [Parlemour];42.36;missing
+Covers;31800101114;Rear cover [Off White];42.36;missing
+Covers;31800101115;Rear cover [Forest];42.36;missing
+Covers;31800101116;Rear cover [Sunny Side];42.36;missing
+Covers;31800101117;Rear cover [Fuchsia];42.36;missing
+Covers;31800101118;Rear cover [Fresh Orange];42.36;missing
+Covers;31800101119;Rear cover [Glazy Silver];42.36;missing
+Covers;31800101120;Rear cover [Pacific Splash];42.36;missing
+Covers;31800101121;Rear cover [Pebble Frosted];42.36;missing
+Covers;31800101600;Rear outer mudguard [Black];42.28;missing
+Covers;31800101700;Under seat front [Black];48.47;missing
+Covers;31800101800;Storage compartment bin incl. cover [Black];56.25;missing
+Covers;31800102000;Helmet hook [Black];09.52;missing
+Covers;31800102100;VIN cover [Black];0.400694444;missing
+Covers;31800102300;Storage compartment bin bracket [Black];0.879861111;missing
+Covers;31800102400;Licence plate bracket [Black];19.55;missing
+Covers;31800103101;Plastic parts set (assembled) [Night Sky Shine];380.73;missing
+Covers;31800103102;Plastic parts set (assembled) [Night Sky Frosted];380.73;missing
+Covers;31800103103;Plastic parts set (assembled) [Fresh Cloud];380.73;missing
+Covers;31800103104;Plastic parts set (assembled) [Pure Silver];380.73;missing
+Covers;31800103105;Plastic parts set (assembled) [Cherrish];380.73;missing
+Covers;31800103106;Plastic parts set (assembled) [Pebble];380.73;missing
+Covers;31800103107;Plastic parts set (assembled) [Blossom];380.73;missing
+Covers;31800103108;Plastic parts set (assembled) [Drop of Sky];380.73;missing
+Covers;31800103109;Plastic parts set (assembled) [Deep Sea];380.73;missing
+Covers;31800103110;Plastic parts set (assembled) [Greenetti];380.73;missing
+Covers;31800103111;Plastic parts set (assembled) [Tanned];380.73;missing
+Covers;31800103112;Plastic parts set (assembled) [Warm Birch];380.73;missing
+Covers;31800103113;Plastic parts set (assembled) [Parlemour];380.73;missing
+Covers;31800103114;Plastic parts set (assembled) [Off White];380.73;missing
+Covers;31800103115;Plastic parts set (assembled) [Forest];380.73;missing
+Covers;31800103116;Plastic parts set (assembled) [Sunny Side];380.73;missing
+Covers;31800103117;Plastic Parts set (assembled) [Fuchsia];380.73;missing
+Covers;31800103118;Plastic parts set (assembled) [Fresh Orange];380.73;missing
+Covers;31800103119;Plastic parts set (assembled) [Glazy Silver];380.73;missing
+Covers;31800103120;Plastic parts set (assembled) [Pacific Splash];380.73;missing
+Covers;31800103121;Plastic parts set (assembled) [Pebble Frosted];380.73;missing
+Electric comp.;31800200100;Headlight complete;44.72;missing
+Electric comp.;31800200200;Indicator front (LED) right;22.55;missing
+Electric comp.;31800200300;Indicator rear (LED) right;22.55;missing
+Electric comp.;31800200201;Indicator front (LED) left;22.55;missing
+Electric comp.;31800200301;Indicator rear (LED) left;22.55;missing
+Electric comp.;31800200400;Rear light (LED);43.41;missing
+Electric comp.;31800200500;Dashboard assembly complete;67.05;missing
+Electric comp.;31800200600;Engine 1500W;494.99;missing
+Electric comp.;31800201400;Wiring loom;135;missing
+Electric comp.;31800201500;Charging socket incl. cover;0.879861111;missing
+Electric comp.;31800201800;Original Ebretti AGM 20 Battery Pack (4x20Ah);376.21;missing
+Electric comp.;31800202100;Sidestand switch;22.17;missing
+Electric comp.;31800202600;Warning and range indicator LED;0.229861111;missing
+Frame;31800800300;Front fork sten;39.03;missing
+Frame;31800800400;Center stand;44.53;missing
+Frame;31800800500;Sidestand;22.36;missing
+Frame;31800800600;Center stand rubber;02.46;missing
+Frame;31800800900;Tyre valve;12.19;missing
+Frame;31800801000;Rear suspension arm;52.05;missing
+Frame;31800801100;Seat hinge;19.04;missing
+Miscellaneous;31801400100;Lock set;34.39;missing
+Miscellaneous;31801400500;Reflector set;0.634722222;missing
+Miscellaneous;31801600100;Light Bulb Set;0.642361111;missing
+Seats;31800900901;Standard seat [Classic Black];67.05;missing
+Seats;31800900902;Standard seat [Classic Brown];75;missing
+Seats;31800900912;Standard seat [Classic Tan];75;missing
+Seats;31800900903;Deluxe seat [Croco Black];202.05;missing
+Seats;31800900904;Deluxe seat [Croco Brown];202.05;missing
+Seats;31800900905;Deluxe seat [Croco Red];202.05;missing
+Seats;31800900906;Deluxe seat [Dotted Greenish];202.05;missing
+Seats;31800900907;Deluxe seat [Smooth Parlemour];202.05;missing
+Seats;31800900908;Deluxe seat [Snake Brown];202.05;missing
+Seats;31800900909;Deluxe seat [Woven White];202.05;missing
+Seats;31800900910;Deluxe seat [Woven Black];202.05;missing
+Seats;31800900911;Deluxe seat [Woven Tan];202.05;missing
+Seats;31800900913;Duotone seat [Classic Black / Classic Brown];238.05;missing
+Seats;31800900914;Duotone seat [Classic Black / Smooth Parlemour];238.05;missing
+Seats;31800900915;Duotone seat [Classic Brown / Croco Black];238.05;missing
+Seats;31800900916;Duotone seat [Classic Black / Croco Black];238.05;missing
+Seats;31800900917;Duotone seat [Classic Black / Croco Brown];238.05;missing
+Seats;31800900918;Duotone seat [Classic Brown / Snake Brown];238.05;missing
+Seats;31800900919;Duotone seat [Classic Black / Croco Red];238.05;missing
+Steering;31800600100;Handlebar chrome;56.25;missing
+Steering;31800600200;Handlebar clamps (set) upper en lower;30.07;missing
+Steering;31800600400;Handlebar mounting plate;43.97;missing
+Steering;31800600500;Dashboard bracket;17.19;missing
+Steering;31800600700;Mirror set;22.08;missing
+Steering;31800600800;Grip lock left;12.32;missing
+Steering;31800600900;Grip lock right;12.32;missing
+Susp.. wheels;31800700200;Steering head bearings set;45.28;missing
+Susp.. wheels;31800700500;Front fork leg left;56.49;missing
+Susp.. wheels;31800700600;Front fork leg right;56.49;missing
+Susp.. wheels;31800700700;Front wheel;88.05;missing
+Susp.. wheels;31800700800;Wheel axle front;18.42;missing
+Susp.. wheels;31800700900;Speedometer driving unit;0.917361111;missing
+Susp.. wheels;31800700300;Standard Tyre 3 x 10 ;48;missing
+Susp.. wheels;31800701100;Spring;20.11;missing
+Brakes;51800500100;Brake lever left complete;47.34;missing
+Brakes;51800500200;Front brake disk;42.47;missing
+Brakes;51800500300;Front disk brake assembly complete;120;missing
+Brakes;51800500400;Brake reaction bar;20;missing
+Brakes;51800500401;Front brake caliper plate;10;missing
+Brakes;51800500500;Brake shoes rear (set);20.03;missing
+Brakes;51800500600;Rear brake bracket;18.08;missing
+Brakes;51800500700;Rear brake assembly complete;42.84;missing
+Brakes;51800500800;Front brake pads (set);0.815972222;missing
+Cables;51800400100;Speedometer cable;22.17;missing
+Cables;51800400200;Rear brake cable;22.17;missing
+Cables;51800400300;Seat lock cable;19.36;missing
+Controls;51800300100;Switch unit left;46.78;missing
+Controls;51800300200;Switch unit right;46.78;missing
+Controls;51800300400;Throttle with wiring;0.922916667;missing
+Controls;51800300500;Grip left;0.879861111;missing
+Covers;51800100101;Front cover (with ornaments) [Night Sky Shine];105;missing
+Covers;51800100102;Front cover (with ornaments) [Night Sky Frosted];105;missing
+Covers;51800100103;Front cover (with ornaments) [Fresh Cloud];105;missing
+Covers;51800100104;Front cover (with ornaments) [Pure Silver];105;missing
+Covers;51800100105;Front cover (with ornaments) [Cherrish];105;missing
+Covers;51800100106;Front cover (with ornaments) [Pebble];105;missing
+Covers;51800100107;Front cover (with ornaments) [Blossom];105;missing
+Covers;51800100108;Front cover (with ornaments) [Drop of Sky];105;missing
+Covers;51800100109;Front cover (with ornaments) [Deep Sea];105;missing
+Covers;51800100110;Front cover (with ornaments) [Greenetti];105;missing
+Covers;51800100111;Front cover (with ornaments) [Tanned];105;missing
+Covers;51800100112;Front cover (with ornaments) [Warm Birch];105;missing
+Covers;51800100113;Front cover (with ornaments) [Parlemour];105;missing
+Covers;51800100114;Front cover (with ornaments) [Off White];105;missing
+Covers;51800100115;Front cover (with ornaments) [Forest];105;missing
+Covers;51800100116;Front cover (with ornaments) [Sunny Side];105;missing
+Covers;51800100117;Front cover (with ornaments) [Fuchsia];105;missing
+Covers;51800100118;Front cover (with ornaments) [Fresh Orange];105;missing
+Covers;51800100119;Front cover (with ornaments) [Glazy Silver];105;missing
+Covers;51800100120;Front cover (with ornaments) [Pacific Splash];105;missing
+Covers;51800100121;Front cover (with ornaments) [Pebble Frosted];105;missing
+Covers;51800100201;Inner top cover [Night Sky Shine];43.41;missing
+Covers;51800100202;Inner top cover [Night Sky Frosted];43.41;missing
+Covers;51800100203;Inner top cover [Fresh Cloud];43.41;missing
+Covers;51800100204;Inner top cover [Pure Silver];43.41;missing
+Covers;51800100205;Inner top cover [Cherrish];43.41;missing
+Covers;51800100206;Inner top cover [Pebble];43.41;missing
+Covers;51800100207;Inner top cover [Blossom];43.41;missing
+Covers;51800100208;Inner top cover [Drop of Sky];43.41;missing
+Covers;51800100209;Inner top cover [Deep Sea];43.41;missing
+Covers;51800100210;Inner top cover [Greenetti];43.41;missing
+Covers;51800100211;Inner top cover [Tanned];43.41;missing
+Covers;51800100212;Inner top cover [Warm Birch];43.41;missing
+Covers;51800100213;Inner top cover [Parlemour];43.41;missing
+Covers;51800100214;Inner top cover [Off White];43.41;missing
+Covers;51800100215;Inner top cover [Forest];43.41;missing
+Covers;51800100216;Inner top cover [Sunny Side];43.41;missing
+Covers;51800100217;Inner top cover [Fuchsia];43.41;missing
+Covers;51800100218;Inner top cover [Fresh Orange];43.41;missing
+Covers;51800100219;Inner top cover [Glazy Silver];43.41;missing
+Covers;51800100220;Inner top cover [Pacific Splash];43.41;missing
+Covers;51800100221;Inner top cover [Pebble Frosted];43.41;missing
+Covers;51800100300;Front mudguard [Unpainted];43.41;missing
+Covers;51800100301;Front mudguard [Night Sky Shine];45.28;missing
+Covers;51800100302;Front mudguard [Night Sky Frosted];45.28;missing
+Covers;51800100303;Front mudguard [Fresh Cloud];45.28;missing
+Covers;51800100304;Front mudguard [Pure Silver];45.28;missing
+Covers;51800100305;Front mudguard [Cherrish];45.28;missing
+Covers;51800100306;Front mudguard [Pebble];45.28;missing
+Covers;51800100307;Front mudguard [Blossom];45.28;missing
+Covers;51800100308;Front mudguard [Drop of Sky];45.28;missing
+Covers;51800100309;Front mudguard [Deep Sea];45.28;missing
+Covers;51800100310;Front mudguard [Greenetti];45.28;missing
+Covers;51800100311;Front mudguard [Tanned];45.28;missing
+Covers;51800100312;Front mudguard [Warm Birch];45.28;missing
+Covers;51800100313;Front mudguard [Parlemour];45.28;missing
+Covers;51800100314;Front mudguard [Off White];45.28;missing
+Covers;51800100315;Front mudguard [Forest];45.28;missing
+Covers;51800100316;Front mudguard [Sunny Side];45.28;missing
+Covers;51800100317;Front mudguard [Fuchsia];45.28;missing
+Covers;51800100318;Front mudguard [Fresh Orange];45.28;missing
+Covers;51800100319;Front mudguard [Glazy Silver);45.28;missing
+Covers;51800100320;Front mudguard [Pacific Splash];45.28;missing
+Covers;51800100321;Front mudguard [Pebble Frosted];45.28;missing
+Covers;51800100401;Lower cover left [Night Sky Shine];51;missing
+Covers;51800100402;Lower cover left [Night Sky Frosted];51;missing
+Covers;51800100403;Lower cover left [Fresh Cloud];51;missing
+Covers;51800100404;Lower cover left [Pure Silver];51;missing
+Covers;51800100405;Lower cover left [Cherrish];51;missing
+Covers;51800100406;Lower cover left [Pebble];51;missing
+Covers;51800100407;Lower cover left [Blossom];51;missing
+Covers;51800100408;Lower cover left [Drop of Sky];51;missing
+Covers;51800100409;Lower cover left [Deep Sea];51;missing
+Covers;51800100410;Lower cover left [Greenetti];51;missing
+Covers;51800100411;Lower cover left [Tanned];51;missing
+Covers;51800100412;Lower cover left [Warm Birch];51;missing
+Covers;51800100413;Lower cover left [Parlemour];51;missing
+Covers;51800100414;Lower cover left [Off White];51;missing
+Covers;51800100415;Lower cover left [Forest];51;missing
+Covers;51800100416;Lower cover left [Sunny Side];51;missing
+Covers;51800100417;Lower cover left [Fuchsia];51;missing
+Covers;51800100418;Lower cover left [Fresh Orange];51;missing
+Covers;51800100419;Lower cover left [Glazy Silver];45.28;missing
+Covers;51800100420;Lower cover left [Pacific Splash];45.28;missing
+Covers;51800100421;Lower cover left [Pebble Frosted];20.03;missing
+Covers;51800100501;Lower cover right [Night Sky Shine];51;missing
+Covers;51800100502;Lower cover right [Night Sky Frosted];51;missing
+Covers;51800100503;Lower cover right [Fresh Cloud];51;missing
+Covers;51800100504;Lower cover right [Pure Silver];51;missing
+Covers;51800100505;Lower cover right [Cherrish];51;missing
+Covers;51800100506;Lower cover right [Pebble];51;missing
+Covers;51800100507;Lower cover right [Blossom];51;missing
+Covers;51800100508;Lower cover right [Drop of Sky];51;missing
+Covers;51800100509;Lower cover right [Deep Sea];51;missing
+Covers;51800100510;Lower cover right [Greenetti];51;missing
+Covers;51800100511;Lower cover right [Tanned];51;missing
+Covers;51800100512;Lower cover right [Warm Birch];51;missing
+Covers;51800100513;Lower cover right [Parlemour];51;missing
+Covers;51800100514;Lower cover right [Off White];51;missing
+Covers;51800100515;Lower cover right [Forest];51;missing
+Covers;51800100516;Lower cover right [Sunny Side];51;missing
+Covers;51800100517;Lower cover right [Fuchsia];51;missing
+Covers;51800100518;Lower cover right [Fresh Orange];51;missing
+Covers;51800100519;Lower cover right [Glazy Silver];45.28;missing
+Covers;51800100520;Lower cover right [Pacific Splash];45.28;missing
+Covers;51800100521;Lower cover right [Pebble Frosted];45.28;missing
+Covers;51800100601;Sidecover left [Night Sky Shine];49.03;missing
+Covers;51800100602;Sidecover left [Night Sky Frosted];49.03;missing
+Covers;51800100603;Sidecover left [Fresh Cloud];49.03;missing
+Covers;51800100604;Sidecover left [Pure Silver];49.03;missing
+Covers;51800100605;Sidecover left [Cherrish];49.03;missing
+Covers;51800100606;Sidecover left [Pebble];49.03;missing
+Covers;51800100607;Sidecover left [Blossom];49.03;missing
+Covers;51800100608;Sidecover left [Drop of Sky];49.03;missing
+Covers;51800100609;Sidecover left [Deep Sea];49.03;missing
+Covers;51800100610;Sidecover left [Greenetti];49.03;missing
+Covers;51800100611;Sidecover left [Tanned];49.03;missing
+Covers;51800100612;Sidecover left [Warm Birch];49.03;missing
+Covers;51800100613;Sidecover left [Parlemour];49.03;missing
+Covers;51800100614;Sidecover left [Off White];49.03;missing
+Covers;51800100615;Sidecover left [Forest];49.03;missing
+Covers;51800100616;Sidecover left [Sunny Side];49.03;missing
+Covers;51800100617;Sidecover left [Fuchsia];49.03;missing
+Covers;51800100618;Sidecover left [Fresh Orange];49.03;missing
+Covers;51800100619;Sidecover left [Glazy Silver];49.03;missing
+Covers;51800100620;Sidecover left [Pacific Splash];49.03;missing
+Covers;51800100621;Sidecover left [Pebble Frosted];49.03;missing
+Covers;51800100701;Sidecover right [Night Sky Shine];49.03;missing
+Covers;51800100702;Sidecover right [Night Sky Frosted];49.03;missing
+Covers;51800100703;Sidecover right [Fresh Cloud];49.03;missing
+Covers;51800100704;Sidecover right [Pure Silver];49.03;missing
+Covers;51800100705;Sidecover right [Cherrish];49.03;missing
+Covers;51800100706;Sidecover right [Pebble];49.03;missing
+Covers;51800100707;Sidecover right [Blossom];49.03;missing
+Covers;51800100708;Sidecover right [Drop of Sky];49.03;missing
+Covers;51800100709;Sidecover right [Deep Sea];49.03;missing
+Covers;51800100710;Sidecover right [Greenetti];49.03;missing
+Covers;51800100711;Sidecover right [Tanned];49.03;missing
+Covers;51800100712;Sidecover right [Warm Birch];49.03;missing
+Covers;51800100713;Sidecover right [Parlemour];49.03;missing
+Covers;51800100714;Sidecover right [Off White];49.03;missing
+Covers;51800100715;Sidecover right [Forest];49.03;missing
+Covers;51800100716;Sidecover right [Sunny Side];49.03;missing
+Covers;51800100717;Sidecover right [Fuchsia];49.03;missing
+Covers;51800100718;Sidecover right [Fresh Orange];49.03;missing
+Covers;51800100719;Sidecover right [Glazy Silver];49.03;missing
+Covers;51800100720;Sidecover right [Pacific Splash];49.03;missing
+Covers;51800100721;Sidecover right [Pebble Frosted];49.03;missing
+Covers;51800100801;Swingarm cover left [Night Sky Shine];34.61;missing
+Covers;51800100802;Swingarm cover left [Night Sky Frosted];34.61;missing
+Covers;51800100803;Swingarm cover left [Fresh Cloud];34.61;missing
+Covers;51800100804;Swingarm cover left [Pure Silver];34.61;missing
+Covers;51800100805;Swingarm cover left [Cherrish];34.61;missing
+Covers;51800100806;Swingarm cover left [Pebble];34.61;missing
+Covers;51800100807;Swingarm cover left [Blossom];34.61;missing
+Covers;51800100808;Swingarm cover left [Drop of Sky];34.61;missing
+Covers;51800100809;Swingarm cover left [Deep Sea];34.61;missing
+Covers;51800100810;Swingarm cover left [Greenetti];34.61;missing
+Covers;51800100811;Swingarm cover left [Tanned];34.61;missing
+Covers;51800100812;Swingarm cover left [Warm Birch];34.61;missing
+Covers;51800100813;Swingarm cover left [Parlemour];34.61;missing
+Covers;51800100814;Swingarm cover left [Off White];34.61;missing
+Covers;51800100815;Swingarm cover left [Forest];34.61;missing
+Covers;51800100816;Swingarm cover left [Sunny Side];34.61;missing
+Covers;51800100817;Swingarm cover left [Fuchsia];34.61;missing
+Covers;51800100818;Swingarm cover left [Fresh Orange];34.61;missing
+Covers;51800100819;Swingarm cover left [Glazy Silver);34.61;missing
+Covers;51800100820;Swingarm cover left [Pacific Splash];34.61;missing
+Covers;51800100821;Swingarm cover left [Pebble Frosted];34.61;missing
+Covers;51800100822;Swingarm cover right [Blossom];34.61;missing
+Covers;51800100823;Swingarm cover right [Cherrish];34.61;missing
+Covers;51800100824;Swingarm cover right [Deep Sea];34.61;missing
+Covers;51800100825;Swingarm cover right [Drop of Sky];34.61;missing
+Covers;51800100826;Swingarm cover right [Forest];34.61;missing
+Covers;51800100827;Swingarm cover right [Fresh Cloud];34.61;missing
+Covers;51800100828;Swingarm cover right [Fresh Orange];34.61;missing
+Covers;51800100829;Swingarm cover right [Fuchsia];34.61;missing
+Covers;51800100830;Swingarm cover right [Glazy Silver);34.61;missing
+Covers;51800100831;Swingarm cover right [Greenetti];34.61;missing
+Covers;51800100832;Swingarm cover right [Night Sky Frosted];34.61;missing
+Covers;51800100833;Swingarm cover right [Night Sky Shine];34.61;missing
+Covers;51800100834;Swingarm cover right [Off White];34.61;missing
+Covers;51800100835;Swingarm cover right [Pacific Splash];34.61;missing
+Covers;51800100836;Swingarm cover right [Parlemour];34.61;missing
+Covers;51800100837;Swingarm cover right [Pebble Frosted];34.61;missing
+Covers;51800100838;Swingarm cover right [Pebble];34.61;missing
+Covers;51800100839;Swingarm cover right [Pure Silver];34.61;missing
+Covers;51800100840;Swingarm cover right [Sunny Side];34.61;missing
+Covers;51800100841;Swingarm cover right [Tanned];34.61;missing
+Covers;51800100842;Swingarm cover right [Warm Birch];34.61;missing
+Covers;51800100900;Inner lower front cover [Black];42.47;missing
+Covers;51800101000;Floor cover [Black];43.22;missing
+Covers;51800101100;Bracket charger socket cover [Black];0.855555556;missing
+Covers;51800101200;Charger socket cover [Black];0.855555556;missing
+Covers;51800101300;Lower sidecover left [Black];22.17;missing
+Covers;51800101400;Lower sidecover right [Black];22.17;missing
+Covers;51800101500;Rear wheel inner mudguard [Black];0.893055556;missing
+Covers;51800101600;Ventilation cover [Black];0.561805556;missing
+Covers;51800101700;Rear wheel mudguard [Black];0.893055556;missing
+Covers;51800101800;Under side protector;47.16;missing
+Covers;51800102000;Helmet hook [Black];09.52;missing
+Covers;51800102100;Ornaments chrome (set);21.05;missing
+Covers;51801500500;Front handlebar cover;19.04;missing
+Covers;51800102300;Rear handlebar cover;0.893055556;missing
+Covers;51800102400;Chrome top rear ornament;46.59;missing
+Covers;51800102500;Chrome lower rear ornament;46.78;missing
+Covers;51800102600;Top cover front suspension arm left;0.855555556;missing
+Covers;51800102700;Top cover suspension arm right;0.855555556;missing
+Covers;51800102800;Lower cover suspension arm left;20.48;missing
+Covers;51800102900;Lower cover suspension arm right;20.48;missing
+Covers;51800103101;Plastic parts set (assembled) [Night Sky Shine];495.24;missing
+Covers;51800103102;Plastic parts set (assembled) [Night Sky Frosted];495.24;missing
+Covers;51800103103;Plastic parts set (assembled) [Fresh Cloud];495.24;missing
+Covers;51800103104;Plastic parts set (assembled) [Pure Silver];495.24;missing
+Covers;51800103105;Plastic parts set (assembled) [Cherrish];495.24;missing
+Covers;51800103106;Plastic parts set (assembled) [Pebble];495.24;missing
+Covers;51800103107;Plastic parts set (assembled) [Blossom];495.24;missing
+Covers;51800103108;Plastic parts set (assembled) [Drop of Sky];495.24;missing
+Covers;51800103109;Plastic parts set (assembled) [Deep Sea];495.24;missing
+Covers;51800103110;Plastic parts set (assembled) [Greenetti];495.24;missing
+Covers;51800103111;Plastic parts set (assembled) [Tanned];495.24;missing
+Covers;51800103112;Plastic parts set (assembled) [Warm Birch];495.24;missing
+Covers;51800103113;Plastic parts set (assembled) [Parlemour];495.24;missing
+Covers;51800103114;Plastic parts set (assembled) [Off White];495.24;missing
+Covers;51800103115;Plastic parts set (assembled) [Forest];495.24;missing
+Covers;51800103116;Plastic parts set (assembled) [Sunny Side];495.24;missing
+Covers;51800103117;Plastic parts set (assembled) [Fuchsia];495.24;missing
+Covers;51800103118;Plastic parts set (assembled) [Fresh Orange];495.24;missing
+Covers;51800103119;Plastic parts set (assembled) [Glazy Silver];495.24;missing
+Covers;51800103120;Plastic parts set (assembled) [Pacific Splash];495.24;missing
+Covers;51800103121;Plastic parts set (assembled) [Pebble Frosted];495.24;missing
+Electric comp.;51800200100;Headlight complete;88.63;missing
+Electric comp.;51800200200;Indicator front left;0.967361111;missing
+Electric comp.;51800200300;Indicator front right;0.967361111;missing
+Electric comp.;51800200400;Rear light/indicator assembly complete;78.75;missing
+Electric comp.;51800200500;Dashboard assembly complete;71.25;missing
+Electric comp.;51800200600;Engine 1500W;494.99;missing
+Electric comp.;51800200800;Connector block;22.36;missing
+Electric comp.;51800200900;Converter DC/DC;47.53;missing
+Electric comp.;51800201300;Main switch;45.28;missing
+Electric comp.;51800201400;Wiring loom;157.05;missing
+Electric comp.;51800201500;Charging socket;20.11;missing
+Electric comp.;51800201800;Ebretti 33 Ah Lead Battery Pack;639.01;missing
+Electric comp.;51800202100;Sidestand switch;21.23;missing
+Electric comp.;51800202600;Warning and range indicator LED;0.229861111;missing
+Frame;51800800200;Swingarm;55.05;missing
+Frame;51800800300;Front fork;63.75;missing
+Frame;51800800400;Center stand;23.11;missing
+Frame;51800800401;Center stand rubber;02.46;missing
+Frame;51800800500;Sidestand;21.08;missing
+Frame;51800800600;Subframe rear;47.34;missing
+Frame;51800800700;Subframe lower;46.22;missing
+Frame;51800800800;Rear light bracket;0.842361111;missing
+Frame;51800800900;Tyre valve;12.19;missing
+Frame;51801501500;Reflector bracket;08.23;missing
+Miscellaneous;51801400100;Lock set (ignition. seat. charger socket);49.03;missing
+Miscellaneous;51801400200;Seat lock;0.943055556;missing
+Miscellaneous;51801400300;Passenger feet rest left;0.560416667;missing
+Miscellaneous;51801400400;Passenger feet rest right;0.560416667;missing
+Miscellaneous;51801400500;Reflector set;22.17;missing
+Miscellaneous;51801500300;VIN cover [Black];0.400694444;missing
+Miscellaneous;51801500400;Seat hinge;19.04;missing
+Miscellaneous;51801600100;Light Bulb Set;0.857638889;missing
+Seats;51800900901;Standard seat [Classic Black];75;missing
+Seats;51800900902;Standard seat [Classic Brown];75;missing
+Seats;51800900912;Standard Seat [Classic Tan];75;missing
+Seats;51800900903;Deluxe seat [Croco Black];225;missing
+Seats;51800900904;Deluxe seat [Croco Brown];225;missing
+Seats;51800900905;Deluxe seat [Croco Red];225;missing
+Seats;51800900906;Deluxe seat [Dotted Greenish];225;missing
+Seats;51800900907;Deluxe seat [Smooth Parlemour];225;missing
+Seats;51800900908;Deluxe seat [Snake Brown];225;missing
+Seats;51800900909;Deluxe seat [Woven White];225;missing
+Seats;51800900910;Deluxe seat [Woven Black];225;missing
+Seats;51800900911;Deluxe seat [Woven Tan];225;missing
+Seats;51800900913;Duotone seat [Classic Black / Classic Brown];265;missing
+Seats;51800900914;Duotone seat [Classic Black / Smooth Parlemour];265;missing
+Seats;51800900915;Duotone seat [Classic Brown / Croco Black];265;missing
+Seats;51800900916;Duotone seat [Classic Black / Croco Black];265;missing
+Seats;51800900917;Duotone seat [Classic Black / Croco Brown];265;missing
+Seats;51800900918;Duotone seat [Classic Brown / Snake Brown];265;missing
+Seats;51800900919;Duotone seat [Classic Black / Croco Red];265;missing
+Steering;51800600100;Handlebar chrome;77.25;missing
+Steering;51800600200;Handlebar bracket top;0.943055556;missing
+Steering;51800600300;Handlebar bracket lower;0.943055556;missing
+Steering;51800600400;Handlebar mounting plate;22.55;missing
+Steering;51800600500;Passenger grip left chrome;0.886805556;missing
+Steering;51800600600;Passenger grip right chrome;0.886805556;missing
+Steering;51800600700;Mirror set;29.12;missing
+Steering;51800600800;Grip lock left;12.32;missing
+Steering;51800600900;Grip lock right;12.32;missing
+Susp.. wheels;51800700200;Steering head bearings set;22.17;missing
+Susp.. wheels;51800700500;Suspension arms front complete;44.53;missing
+Susp.. wheels;51800700700;Front wheel with axle and valve;129;missing
+Susp.. wheels;51800700800;Front wheel axle;18.42;missing
+Susp.. wheels;51800701000;Standard Tyre 3.50 x 10 ;51;missing
+Susp.. wheels;51800700300;Shock absorber front;26.89;missing
+Susp.. wheels;51800700400;Shock absorber rear;46.75;missing
+Susp.. wheels;51800700900;Speedometer driving unit;0.879861111;missing
+Electric comp.;E8000081;Indicator relay;20.11;missing
+Electric comp.;E8000082;Horn;21.08;missing
+Electric comp.;E01500200;Fuse;02.48;missing
+Electric comp.;E01500201;Fuse holder;18.55;missing
+Electric comp.;E10200700;Controller 1500W/48V (version 2);499.02;missing
+Electric comp.;E8001350;Accu Lithium 30Ah (13S/54.6V)Battery Pack (excl. charger);999;missing
+Electric comp.;E8001351;Accu Lithium 30Ah (13S/54.6V)Battery Pack portable;1.249;missing
+Electric comp.;E8001352;Accu Lithium 60Ah (13S/54.6V) Battery Pack (excl. charger);79.80;missing
+Electric comp.;E8001353;Accu Lithium 60Ah (13S/54.6V) Battery Pack portabler;2.164;missing
+Electric comp.;E8001404;Controller relay;29.23;missing
+Miscellaneous;E8001405;Licence plate holder;09.07;missing
+Miscellaneous;E8000083;3-Step leadgell Charger 5A;199;missing
+Miscellaneous;E8000084;Lithium Charger 48V/5A (54.6V);189;missing
+Miscellaneous;E8000085;Lithium Quick-Charger 48V/10A (54.6V);302.05;missing
+Accessories;E8001324;Windscreen High;149;missing
+Accessories;E8001323;Windscreen Medium;139;missing
+Accessories;E8001349;Ebretti MP3 Sound Generator;89;missing
+Accessories;E8001322;Small handle bar (69cm);79;missing
+Accessories;51801100400;Luggage carrier rear chrome collapsible;139;missing
+Accessories;51801100410;Luggage carrier rear chrome;99;missing
+Accessories;51801100420;Luggage carrier rear chrome for backrest;49;missing
+Accessories;31800700300;Whitewall tyre 3 x 10;89;missing
+Accessories;51800700300;Whitewall tyre 3.50 x 10;95;missing
+Accessories;E8001304;Winter tyre M+S 3.50 x 10;59.05;missing
+Accessories;E8001298;Shad top case 26L;79.05;missing
+Accessories;E8001297;Shad top case 29L;96.05;missing
+Accessories;E8001389;LEM top case 26L [Original Silver];76;missing
+Accessories;E8001391;LEM top case 26L [Original Black];76;missing
+Accessories;E8001392;LEM top case 26L [Original Blue];86;missing
+Accessories;E8001393;LEM top case 26L [Retro White];86;missing
+Accessories;E8001394;LEM top case 26L [Retro Black];86;missing
+Accessories;E8001395;LEM top case 26L [Retro Red];86;missing
+Accessories;E8001396;LEM top case 26L [Retro Yellow];86;missing
+Accessories;E8001397;LEM top case 26L [Retro Pink];86;missing
+Accessories;E8001398;LEM top case 26L [Retro Kaki];86;missing
+Accessories;E8001387;Extension cord 3m;29.05;missing
+Accessories;E8001388;Extension cord 6m;39.05;missing
+Accessories;E8001303;Top case deluxe - genuine leather brown;229;missing
+Accessories;E8001390;Ebretti Luma Escudo 38 Chain Lock 120cm - ART 3;69.05;missing
+Accessories;E8001406;Helmet LEM Roger Vintage Black;104;missing
+Accessories;E8001407;Basil Wicker Basked;49.09;missing
+Accessories;E8001368;ABUS 10 KS Chain Lock 110cm - ART 3;69.05;missing
+Snake; 123021909; Evil creature from hell; 102.3; animals/snake1.png
+Snake; 123223429; Positive being of light; 12.4; animals/snake2.png
+Snake; 123021129; Just the cutest thing; 456.3; animals/snake3.png
+Snake; 123021939; Friendly. Eats own kin; 302.3; animals/snake4.png
+Snake; 12302119; Dreams of going to france; 502.3; animals/snake5.png
+Dragon; 1203832472; Breathes fire. Loves cuddling; 10232211.2; animals/dragon2.png
+Dragon; 231209328; Destroy villages to relax; 8524342.2; animals/dragon3.png
+Dragon; 231209328; Older than time ; 5485442.2; animals/dragon1.png
+Dragon; 231209328; Loves to protect princesses; 1221342.2; animals/dragon4.png
+Rhino; 23049828; Never make eye contact. Good pet; 1.0; animals/rhino4.png
+Rhino; 230238382; Requires at least 400 acres; 5403.4; animals/rhino1.png
+Rhino; 203234923; This animal studied the Classics; 65647.3; animals/rhino3.png
+Rhino; 20438232; Enjoys nice walks and heavy eating; 5.0; animals/rhino2.png

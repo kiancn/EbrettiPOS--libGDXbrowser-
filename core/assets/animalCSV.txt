@@ -1,0 +1,13 @@
+Snake; 123021909; Evil creature from hell; 102.3; animals/snake1.png
+Snake; 123223429; Positive being of light; 12.4; animals/snake2.png
+Snake; 123021129; Just the cutest thing; 456.3; animals/snake3.png
+Snake; 123021939; Friendly. Eats own kin; 302.3; animals/snake4.png
+Snake; 12302119; Dreams of going to france; 502.3; animals/snake5.png
+Dragon; 1203832472; Breathes fire. Loves cuddling; 10232211.2; animals/dragon2.png
+Dragon; 231209328; Destroy villages to relax; 8524342.2; animals/dragon3.png
+Dragon; 231209328; Older than time ; 5485442.2; animals/dragon1.png
+Dragon; 231209328; Loves to protect princesses; 1221342.2; animals/dragon4.png
+Rhino; 23049828; Never make eye contact. Good pet; 1.0; animals/rhino4.png
+Rhino; 230238382; Requires at least 400 acres; 5403.4; animals/rhino1.png
+Rhino; 203234923; This animal studied the Classics; 65647.3; animals/rhino3.png
+Rhino; 20438232; Enjoys nice walks and heavy eating; 5.0; animals/rhino2.png
