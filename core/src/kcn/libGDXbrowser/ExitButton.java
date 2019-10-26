@@ -9,7 +9,8 @@ import kcn.methodreferencing.MethodReference;
 import kcn.utility.WindowMath;
 
 
-/*I need to change the way input is handled or rewrite some of the contentpages. Not working atm. */
+/* I need to change the way input is handled. Not working atm: Concurrency exceptions occur when
+* button is 'removed from focus'. */
 public class ExitButton
         implements IButton
 {

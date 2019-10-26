@@ -9,16 +9,18 @@ import kcn.methodreferencing.*;
 import kcn.utility.TO;
 
 
-/** Methods in this InputProcessor (-implementing-) class are executed when input events occur.
+/**
+ * Methods in this InputProcessor (-implementing-) class are executed when input events occur.
  * <p>The idea is to supply MethodReferences from objects that want to be
  * informed of input events.
  * <p></p> * (Be aware that, as such, there is no distinction between
- * left and and right mouse clicks; libGDX was originally designed for android). </p> */
+ * left and and right mouse clicks; libGDX was originally designed for android). </p>
+ */
 public class SignallingInputProcessor
         implements InputProcessor
 {
-    public final MethodPack touchUpCallbackMethods;
-    MethodReference pressedKeyCallbackMethod;
+    public final MethodPack touchUpCallbackMethods; // pack that will execute when button is released
+    MethodReference pressedKeyCallbackMethod; // methref will execute
     MethodReference upKeyCallbackMethod;
     private MethodPack charTypedCallbackMethods;
 
@@ -83,23 +85,6 @@ public class SignallingInputProcessor
     public boolean keyTyped(char character)
     {
         charTypedCallbackMethods.run(character);
-
-        return false;
-    }
-
-    /**
-     * Called when the screen was touched or a mouse button was pressed. The button parameter will be  on iOS.
-     *
-     * @param screenX The x coordinate, origin is in the upper left corner
-     * @param screenY The y coordinate, origin is in the upper left corner
-     * @param pointer the pointer for the event.
-     * @param button  the button
-     * @return whether the input was processed
-     */
-    @Override
-    public boolean touchDown(int screenX, int screenY, int pointer, int button)
-    {
-
         return false;
     }
 
@@ -115,12 +100,26 @@ public class SignallingInputProcessor
     @Override
     public boolean touchUp(int screenX, int screenY, int pointer, int button)
     {
-        System.out.println(TO.yellow("You released that cursor, yeahh. At X:" + screenX + "\tY: " + (Gdx.graphics.getHeight()-screenY)));
+        System.out.println(TO.yellow("You released that cursor, yeahh. At X:" + screenX + "\tY: " + (Gdx.graphics.getHeight() - screenY)));
 
         touchUpCallbackMethods.run(new Vector2(screenX, screenY));
         return false;
     }
 
+    // touch-down (both touch and ) is not implemented; but the method needs to be overriden anyway
+    /**
+     * Called when the screen was touched or a mouse button was pressed. The button parameter will be  on iOS.
+     *
+     * @param screenX The x coordinate, origin is in the upper left corner
+     * @param screenY The y coordinate, origin is in the upper left corner
+     * @param pointer the pointer for the event.
+     * @param button  the button
+     * @return whether the input was processed
+     */
+    @Override
+    public boolean touchDown(int screenX, int screenY, int pointer, int button){ return false; }
+
+    // not implemented; but the method needs to be overriden anyway
     /**
      * Called when a finger or the mouse was dragged.
      *
@@ -134,7 +133,7 @@ public class SignallingInputProcessor
     {
         return false;
     }
-
+    // not implemented; but the method needs to be overriden anyway
     /**
      * Called when the mouse was moved without any buttons being pressed. Will not be called on iOS.
      *
@@ -148,6 +147,7 @@ public class SignallingInputProcessor
         return false;
     }
 
+    // not implemented; but the method needs to be overriden anyway
     /**
      * Called when the mouse wheel was scrolled. Will not be called on iOS.
      *

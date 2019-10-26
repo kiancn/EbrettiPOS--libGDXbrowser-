@@ -13,12 +13,14 @@ import kcn.libGDXbrowser.EbrettiPOS.ebretti.EbrettiPart;
 import kcn.libGDXbrowser.EbrettiPOS.ebretti.EbrettiSelectionButton;
 import kcn.libGDXbrowser.content.Content;
 import kcn.libGDXbrowser.EbrettiPOS.ebretti.ShoppingCart;
+import kcn.libGDXbrowser.content.IDrawContent;
 
 import java.util.ArrayList;
 // this class contains a lot of functionality that needs to generalized for further use.
 
 public class SearchForPartsContent
         extends Content
+        implements IDrawContent
 {
     SignallingInputProcessor inputProcessor; // buttons are registered with an input processor
 
@@ -28,23 +30,20 @@ public class SearchForPartsContent
     InputStringBuilder simpleStringBuilder; // object enables assessing keyboard input in a reasonable way
 
     ShoppingCart shoppingCart; // this object hold the list of selected parts (and parts)
-
+    // these are the currently searched parts; which parts are actually being drawn is decided through the
+    // high and low indexes
+    ArrayList<EbrettiPart> currentEbrettiParts;
     private ArrayList<EbrettiPart> ebrettiParts;
     // lists contains a button for each part in ebrettiParts-list: buttons adding and ditto removing parts
     private ArrayList<EbrettiSelectionButton> buttons_Adds;
     private ArrayList<EbrettiSelectionButton> buttons_Removes;
-
-    private float timeAfterFocusGain_InactivePeriod; // this is the seconds after creation when content will
+    private float timeAfterFocusGain_InactivePeriod; // period after focus gain before input-processing
+    // methods are added to input-processor (to avoid concurrency exceptions)
     private float timeSinceFocusGain; // tracks period between focus gain and adding buttons to inputProcess
     private boolean hasButtonsBeenAddedToInputProcessor;// tracks if is safe to click content; switched by
-
     private int currentPartListView_LowIndex;
     private int currentPartListView_HighIndex;
     private int numberOfPartListView_Intervals;
-
-    // these are the currently searched parts; which parts are actually being drawn is decided through the
-    // high and low indexes
-    ArrayList<EbrettiPart> currentEbrettiParts;
     private ArrayList<EbrettiSelectionButton> currentButtons_Adds; // additive buttons, one for each part
     private ArrayList<EbrettiSelectionButton> currentButtons_Removes;  // removal buttons, one for each part
     private String mostRecentUserQuery; // string holds the most recent user search (remember to set to "")
@@ -118,38 +117,57 @@ public class SearchForPartsContent
     {
 
         int yAdjustment = Gdx.graphics.getHeight() - 17;
+        int xAdjustment = 150;
 
+
+        /* drawing text to accompany searches (notice the else that catches a null returnString)*/
         if(simpleStringBuilder.returnString != null)
         {
             fontRenderer.setColor(Color.GOLD);
-            fontRenderer.draw(batch, "Current search: " + simpleStringBuilder.returnString, 150, yAdjustment);
-            if(numberOfPartListView_Intervals > 1)
+            fontRenderer.draw(batch, "Current search: " + simpleStringBuilder.returnString,
+                              xAdjustment,
+                              yAdjustment);
+            if(numberOfPartListView_Intervals > 0)
             {
                 fontRenderer.setColor(Color.LIGHT_GRAY);
                 fontRenderer.draw(batch,
                                   "There were at least " + ((numberOfPartListView_Intervals - 1) * 10) + " " +
                                   "results",
-                                  150, yAdjustment - 20);
+                                  xAdjustment, yAdjustment - 20);
                 fontRenderer.draw(batch,
                                   "Search a between 1 and " + numberOfPartListView_Intervals +
                                   " to view result pages 1 to " + numberOfPartListView_Intervals,
-                                  150, yAdjustment - 40);
+                                  xAdjustment, yAdjustment - 40);
                 fontRenderer.draw(batch,
                                   "You are " + (int)((double)currentPartListView_LowIndex / currentEbrettiParts.size() * 100) +
                                   "% into current list",
-                                  540, yAdjustment - 40);
+                                  xAdjustment + 450, yAdjustment - 40);
             }
 
             fontRenderer.setColor(Color.WHITE);
             fontRenderer.draw(batch, "Searched terms:", 30, yAdjustment);
             fontRenderer.setColor(Color.LIGHT_GRAY);
 
-
+            /* writing out the search previous search strings */
             for(String searchString : simpleStringBuilder.getListOfReceivedStrings())
             {
                 yAdjustment -= 17;
-                fontRenderer.draw(batch, searchString, 50, yAdjustment);
+                fontRenderer.draw(batch,
+                                  searchString,
+                                  50,
+                                  yAdjustment);
             }
+        } else
+        { /* this is only drawn if no search has been made yet. */
+            fontRenderer.draw(batch, "You are viewing all items as one list.", 150, yAdjustment);
+            fontRenderer.draw(batch, "Type a number between 1 and " + numberOfPartListView_Intervals +
+                                     " to view another part of the full list.",
+                              xAdjustment,
+                              yAdjustment - 40);
+            fontRenderer.draw(batch,
+                              "Or type in your own search below. NB Backspace is not implemented.",
+                              xAdjustment,
+                              yAdjustment - 80);
         }
 
         fontRenderer.setColor(Color.GOLD);
@@ -162,7 +180,7 @@ public class SearchForPartsContent
      */
     private void drawPartList(Batch batch, ArrayList<EbrettiPart> ebrettiParts)
     {
-        int yAdj = 0;
+        int yAdjPerItem = 0;
         int numOfItems = 1 + Math.abs(currentPartListView_HighIndex - currentPartListView_LowIndex);
 
         fontRenderer.setColor(Color.WHITE);
@@ -170,41 +188,41 @@ public class SearchForPartsContent
 
         if(ebrettiParts.size() > 0)
         {
-            int yAdjustment = 220;
+            int yAdjGlobal = 220;
 
             // adding parts to the display/window/screen
             for(int i = currentPartListView_LowIndex; i <= currentPartListView_HighIndex; i++)
             {
                 // drawing image representation or placeholder, if there is no png/jpg present
                 batch.draw(ebrettiParts.get(i).partImage, 180 - ebrettiParts.get(i).partImage.getWidth(),
-                           yAdjustment + numOfItems * 50 - (yAdj * 50) - ebrettiParts.get(i).partImage.getHeight());
+                           yAdjGlobal + numOfItems * 50 - (yAdjPerItem * 50) - ebrettiParts.get(i).partImage.getHeight());
 
                 // drawing part category text
                 fontRenderer.setColor(Color.CORAL);
                 fontRenderer.draw(batch, ebrettiParts.get(i).category, 200,
-                                  yAdjustment + numOfItems * 50 - (yAdj * 50));
+                                  yAdjGlobal + numOfItems * 50 - (yAdjPerItem * 50));
 
                 // drawing part ID number
                 fontRenderer.setColor(Color.LIGHT_GRAY);
                 fontRenderer.draw(batch, "ID: " + ebrettiParts.get(i).ID, 200,
-                                  yAdjustment + numOfItems * 50 - (yAdj * 50) - 20);
+                                  yAdjGlobal + numOfItems * 50 - (yAdjPerItem * 50) - 20);
 
                 // drawing description text
                 fontRenderer.setColor(Color.WHITE);
                 fontRenderer.draw(batch, ebrettiParts.get(i).description, 300,
-                                  yAdjustment + numOfItems * 50 - (yAdj * 50));
+                                  yAdjGlobal + numOfItems * 50 - (yAdjPerItem * 50));
 
                 // drawing price text
                 fontRenderer.setColor(Color.GOLD);
                 fontRenderer.draw(batch, "Price" + "" + String.format("%,.2f",
                                                                       ebrettiParts.get(i).price),
                                   350,
-                                  yAdjustment + numOfItems * 50 - (yAdj * 50) - 20);
+                                  yAdjGlobal + numOfItems * 50 - (yAdjPerItem * 50) - 20);
 
 
                 // drawing button to add to shopping cart
                 currentButtons_Adds.get(i).setPosition(535,
-                                                       yAdjustment + numOfItems * 50 - (yAdj * 50) - 20);
+                                                       yAdjGlobal + numOfItems * 50 - (yAdjPerItem * 50) - 20);
                 currentButtons_Adds.get(i).drawButton(batch);
                 // drawing label for this button
                 currentButtons_Adds.get(i).drawLabel(batch, currentButtons_Adds.get(i).position.x,
@@ -218,7 +236,7 @@ public class SearchForPartsContent
                 currentButtons_Removes.get(i).drawLabel(batch, currentButtons_Removes.get(i).position.x,
                                                         currentButtons_Removes.get(i).position.y);
 
-                yAdj++;
+                yAdjPerItem++;
             }
         }
     }
@@ -228,10 +246,17 @@ public class SearchForPartsContent
      */
     private void drawCart(Batch batch)
     {
-        Vector2 originAdjustment = new Vector2(875, 340); // upper left corner ; because we go down every
+
+        Vector2 originAdjustment = new Vector2(875, 720); // upper left corner ; because we go down every
+
+        /* a little flavor text for the shopping cart */
+        fontRenderer.draw(batch, "Shopping cart overview:", originAdjustment.x, originAdjustment.y + 50);
+
+
         // iteration
         if(shoppingCart.getPartsInCart().size() > 0)
         {
+
             for(int i = 0; i < shoppingCart.getPartsInCart().size(); i++)
             {
                 fontRenderer.draw(batch,
@@ -251,7 +276,7 @@ public class SearchForPartsContent
                                   originAdjustment.y - i * 42 - 20);
 
                 fontRenderer.draw(batch,
-                                  "" + shoppingCart.getPartsInCart().get(i).price,
+                                  "" + String.format("%.2f", shoppingCart.getPartsInCart().get(i).price),
                                   originAdjustment.x + 200,
                                   originAdjustment.y - i * 42);
 
@@ -295,8 +320,8 @@ public class SearchForPartsContent
 
     private void checkIfButtonShouldBeAddedToInputManager()
     {
-        // check is necessary because immidiate adding of buttons caused signals to come in while buttons
-        // were being added to inputprocessor, (which caused an nasty ~ concurrent write error)
+        // check is necessary because immediate adding of buttons caused concurrent writing to a methodpack
+        // in input-processor, which is a no-good exception to ignore.
         if(!hasButtonsBeenAddedToInputProcessor) // proceed if button have not already been added.
         {
             // check if it is time to add buttons
@@ -394,7 +419,6 @@ public class SearchForPartsContent
                     setViewedInterval(possibleIntervalRequestInt);
                     gainFocus();
                 }
-
             }
 
             if(queryString.length() >= 3)
@@ -435,7 +459,8 @@ public class SearchForPartsContent
         }
     }
 
-    /* Method 'looks up queried term in full parts list and creates partial lists of the search; method
+    /* Method 'looks up queried term in full parts list and creates partial list based on the search (and
+    two lists for buttons); method
      is pulled only from checkForNewUserQuery */
     private void lookUpSearchAndCreateNewPartialLists(String searchTerm)
     {

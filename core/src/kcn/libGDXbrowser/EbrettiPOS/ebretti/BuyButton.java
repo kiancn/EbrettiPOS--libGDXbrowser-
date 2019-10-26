@@ -28,7 +28,7 @@ public class BuyButton
         buttonClickAnimation = new SheetAnimation("skeletonDance-anim-1200x1200.png",
                                                   10,
                                                   5,
-                                                  0.3f);
+                                                  1.3f);
 
         buttonTexture = new Texture("buybutton.png");
 
@@ -92,10 +92,8 @@ public class BuyButton
                                         position
                                        ))
         {
-
-
             durationSinceLastClick = 0;
-            System.out.println("You hit a button!");
+            System.out.println("You hit the buy button!");
         }
     }
 }

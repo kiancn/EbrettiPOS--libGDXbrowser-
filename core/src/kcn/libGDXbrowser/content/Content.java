@@ -5,7 +5,10 @@ import com.badlogic.gdx.graphics.g2d.Batch;
 /**The intent is to extend this class with actual content*/
 public abstract class Content
 {
-    // The name of Content object is all important;
+    /*
+     The name of Content object is all important, since the ContentManager locate any Content through this
+     name (inspect .
+    */
     public String name;
 
     /*
@@ -24,7 +27,7 @@ public abstract class Content
     public void loseFocus(){System.out.println("This method needs to be overwritten.");}
 
     /*
-    *
+    * This method is overridden
     * */
     public void drawContent(Batch batch){
         System.out.println("You should override this method.");

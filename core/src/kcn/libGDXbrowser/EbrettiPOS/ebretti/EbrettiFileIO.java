@@ -16,7 +16,6 @@ import java.util.ArrayList;
  */
 public class EbrettiFileIO
 {
-
     /**
      * Supply a txt csv file PATH containing Ebrettipart lines.
      */
@@ -48,7 +47,7 @@ public class EbrettiFileIO
 
         } catch(IOException e)
         {
-            e.printStackTrace();
+            e.printStackTrace();  // this is standard
         } finally
         {
             try
@@ -64,20 +63,20 @@ public class EbrettiFileIO
         return loadedParts;
     }
 
-    // Utility which converts CSV to ArrayList using Split Operation
+    /* Utility which converts CSV to EbrettiPart using Split Operation */
     private static EbrettiPart convertCSVLineToEbrettiPart(String partCSV, String splitString)
     {
         int csvDataPointCount = 0; // debugging purposes
 
         if(partCSV != null)
-        {   // split segments the supplied string into parts, creating and adding to array a new part for eacg
+        {   // split segments the supplied string into parts, creating and adding to array a new part for each
             // encounter with any number of space-characters (\\s is space, * indicatas 'any number of reps'.)
             String[] splitData = partCSV.split("\\s*" + splitString + "\\s*"); // splitting the received string
 
             csvDataPointCount = splitData.length;
             if(splitData.length == 5) // if length is not 5, it is not an Ebretti-Part
             {
-                try
+                try //
                 {
                     EbrettiPart importedPart = new EbrettiPart(splitData[0].trim(),
                                                                splitData[1].trim(),
@@ -97,7 +96,7 @@ public class EbrettiFileIO
                 System.out.println(TO.red("From EbrettiFileIO: Supplied CSV had wrong length = " + csvDataPointCount));
             }
         }
-        // code only reaches here if the supplied
+        // code only reaches here if the split line is different length than 5; failures created for debugging
         return new EbrettiPart("Failure",
                                "40",
                                "Failure to load file on display",

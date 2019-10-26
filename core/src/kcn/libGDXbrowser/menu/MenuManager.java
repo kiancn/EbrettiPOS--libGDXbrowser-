@@ -99,7 +99,7 @@ public class MenuManager
     {
         // System.out.println("Hello from switchToNameMenu");
 
-        // goBackString is received as a signal to go back to previously active menu
+        // goBackString is 'received' as a signal to go back to previously active menu
         if(menuName.contains(goBackString))
         {
             if(previousMenus.size() > 0)
@@ -109,7 +109,6 @@ public class MenuManager
                 inputProcessor.getTouchUpCallbackMethods().add(currentMenu.touchUpCallbackMethod);
                 return true;
             }
-
         }
 
         // if menu by supplied name is found
@@ -119,7 +118,10 @@ public class MenuManager
             // locate that menu
             for(Menu menu : menus)
             {
-                if(menu.name.contains(menuName))
+                /* this will always pick the first match, and not check any further.
+                * this is intended, make sure menus have unique names. */
+                if(menu.name.equals(menuName))
+//                if(menu.name.contains(menuName))
                 {
                     if(inputProcessor.getTouchUpCallbackMethods().length() > 0)
                     {

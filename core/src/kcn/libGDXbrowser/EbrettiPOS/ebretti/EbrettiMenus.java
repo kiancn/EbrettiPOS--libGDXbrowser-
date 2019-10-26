@@ -6,7 +6,7 @@ import kcn.libGDXbrowser.menu.Menu;
 import kcn.libGDXbrowser.menu.MenuBar;
 
 
-/** This class contains methods that return menus. */
+/** This class contains methods that return menus. I it specific to the Ebretti POS*/
 public class EbrettiMenus
 {
     Browser browser;
