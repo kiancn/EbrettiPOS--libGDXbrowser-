@@ -11,3 +11,9 @@ Class diagram:
 ![Class diagram](https://github.com/kiancn/EbrettiPOS--libGDXbrowser-/blob/master/Ebretti%20POS%20Class%20Diagram.png)
 
 Project is built in IntelliJ and I have no idea if it will run in another IDE.
+
+To import a libGDX project into IntelliJ, import whole project folder.
+And to setup a run configuration, this video gives a clear example at linked time (~1 minute long):
+https://youtu.be/tuVjurLVPO4?list=LLD3XdWDOYzZKtk7FW_XS0FA&t=128
+(The first part of the video is about creating an empty project, NOT importing it )
+
