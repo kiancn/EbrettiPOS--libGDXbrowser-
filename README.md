@@ -8,4 +8,6 @@ The CSV file is in the core/assets-folder in the project:
 - The browser runs fine without the content, but it is a boring experience.
 
 Class diagram:
-![alt text](https://rxsaver.retailmenot.com/wp-content/uploads/2016/06/Brand-to-Generic-Feature-Image.jpg)
+![Class diagram](https://github.com/kiancn/EbrettiPOS--libGDXbrowser-/blob/master/Ebretti%20POS%20Class%20Diagram.png)
+
+Project is built in IntelliJ and I have no idea if it will run in another IDE.
