@@ -13,7 +13,7 @@ public class WindowMath
      */
     public static boolean isPointWithinArea(Vector2 point, Vector2 areaDimension, Vector2 areaOrigin)
     {
-        boolean xHit = false; // flips if point x is found within
+        boolean xHit = false; // flips if point x is found within requested area
         boolean yHit = false;
 
         /* deciding if checked point is in supplied area*/

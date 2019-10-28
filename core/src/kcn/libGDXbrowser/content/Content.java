@@ -2,6 +2,8 @@ package kcn.libGDXbrowser.content;
 
 import com.badlogic.gdx.graphics.g2d.Batch;
 
+import java.util.ArrayList;
+
 /**The intent is to extend this class with actual content*/
 public abstract class Content
 {

@@ -18,8 +18,6 @@ import java.util.Objects;
 public class MethodReference
         implements IMethodReference
 {
-
-
     private Object objectToExecuteMethodOn;
     private Method methodToExecute;
 

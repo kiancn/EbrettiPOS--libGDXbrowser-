@@ -22,9 +22,9 @@ public class EbrettiPOS
     ArrayList<EbrettiPart> ebrettiParts; // this list will carry the from-file-loaded spare bike parts
 
     // this path is annoyingly absolute; another solution with relative path is needed
-
-    String pathToPartsCSVFile = "G:\\learningLibGDX\\game003\\core\\assets\\partsCSV.txt";
-
+    private final String pathToPartsCSVFile = "G:\\learningLibGDX\\game003\\core\\assets\\partsCSV.txt";
+    // ANYONE LOOKING: YOU NEED TO CHANGE PATH TO FILE TO MATCH WHERE THE FILE IS ON YOUR DRIVE
+    // Location: '.. <PROJECT FOLDER>\core\assets\partsCSV.txt'
 
     public EbrettiPOS(SignallingInputProcessor inputProcessor)
     {

@@ -18,19 +18,16 @@ public class Menu
     public final String name;
 
     public final ArrayList<MenuBar> bars;
-    //    private final int ID;
+
     public MethodReference touchUpCallbackMethod; // mouse-up = touch-up; named for consistency
 
     MenuManager manager; // the manager is the active context that this menu exists via
-
-
 
     public Menu(String NAME, MenuManager MANAGER)
     {
         name = NAME;
         manager = MANAGER;
 
-//        ID = IDCounter.getNewId();
         bars = new ArrayList<>();
 
         /* making the methodreferences seems cumbersome because fetching the method-objects might throw

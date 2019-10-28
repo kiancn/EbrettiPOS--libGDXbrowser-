@@ -614,16 +614,46 @@ Accessories;E8001390;Ebretti Luma Escudo 38 Chain Lock 120cm - ART 3;69.05;missi
 Accessories;E8001406;Helmet LEM Roger Vintage Black;104;missing
 Accessories;E8001407;Basil Wicker Basked;49.09;missing
 Accessories;E8001368;ABUS 10 KS Chain Lock 110cm - ART 3;69.05;missing
-Snake; 123021909; Evil creature from hell; 102.3; animals/snake1.png
+Snake; 123021909; Evil creature from Hell; 102.3; animals/snake1.png
 Snake; 123223429; Positive being of light; 12.4; animals/snake2.png
 Snake; 123021129; Just the cutest thing; 456.3; animals/snake3.png
 Snake; 123021939; Friendly. Eats own kin; 302.3; animals/snake4.png
-Snake; 12302119; Dreams of going to france; 502.3; animals/snake5.png
+Snake; 12302119; Dreams of going to France; 502.3; animals/snake5.png
 Dragon; 1203832472; Breathes fire. Loves cuddling; 10232211.2; animals/dragon2.png
-Dragon; 231209328; Destroy villages to relax; 8524342.2; animals/dragon3.png
+Dragon; 231209328; Destroys villages to relax; 8524342.2; animals/dragon3.png
 Dragon; 231209328; Older than time ; 5485442.2; animals/dragon1.png
 Dragon; 231209328; Loves to protect princesses; 1221342.2; animals/dragon4.png
 Rhino; 23049828; Never make eye contact. Good pet; 1.0; animals/rhino4.png
-Rhino; 230238382; Requires at least 400 acres; 5403.4; animals/rhino1.png
+Rhino; 230238482; Requires at least 400 acres; 5403.4; animals/rhino1.png
 Rhino; 203234923; This animal studied the Classics; 65647.3; animals/rhino3.png
 Rhino; 20438232; Enjoys nice walks and heavy eating; 5.0; animals/rhino2.png
+Rhino; 20438233; Gets a head ache at sundown; 5.0; animals/rhino4.png
+Rhino; 20438253; Will greet you with a warning; 32112.0; animals/rhino3.png
+Rhino; 20438263; Hates prejudice; 2315.0; animals/rhino5.png
+Rhino; 2043873; Hoarder, but reasonable; 45215.0; animals/rhino5.png
+Rhino; 20438233; Gets a head ache at sundown; 5.0; animals/rhino4.png
+Unicorn; 45652455; Carries an extra phone book; 23032999.4; animals/unicorn1.png
+Unicorn; 45652456; Always wanted to be a horse; 8955999.4; animals/unicorn2.png
+Unicorn; 45652457; Left hoof very big. Subtle jokes.; 8542999.4; animals/unicorn3.png
+Unicorn; 45652459; Very proud of horn. No Limits.; 62999.4; animals/unicorn1.png
+Cat;    540152140; Unique among all cats. Loves mice.; 124.5; animals/cat1.png
+Cat;    540152112; Evil creature from Hell.; 124.5; animals/cat2.png
+Cat;    540152121; Unique among all cats. Loves rice.; 124.5; animals/cat3.png
+Cat;    540152154; Unique among all cats. Loves rain.; 124.5; animals/cat4.png
+Cat;    540152112; Unique among all cats. Hates rain.; 124.5; animals/cat5.png
+Cat;    540152142; Normal. Good cook.; 124.5; animals/cat6.png
+Cat;    540152234; Miavs four languages. ; 124.5; animals/cat7.png
+Cat;    540152145; Unique among all cats. Hates mice.; 124.5; animals/cat1.png
+Bunny; 456784241; Long, pointy teeth. Guard bunny; 452.5; animals/bunny4.png
+Bunny; 456784242; Kills with cuteness. Lethal; 452.5; animals/bunny1.png
+Bunny; 456784243; Of royal linage. Not proud.; 452.5; animals/bunny2.png
+Bunny; 456784244; Normal. Carnivore.; 452.5; animals/bunny3.png
+Whale; 23452412; Plankton expert. Loud song.; 457995; animals/whale1.png
+Whale; 23452412; Keep in ocean for best results; 457995; animals/whale2.png
+Whale; 23452412; Sings along to the radio.; 457995; animals/whale3.png
+Whale; 23452412; Wants an office job.; 457995; animals/whale4.png
+Whale; 23452412; Guard whale. Good with children.; 457995; animals/whale5.png
+Wolf; 3298232; Gentle being. Would knit if had hands; 1; animals/wolf1.png
+Wolf; 3298232; Eternal hunter. Family wolf; 1; animals/wolf2.png
+Wolf; 3298232; Former civil engineer. Now wolf; 1; animals/wolf4.png
+Wolf; 3298232; Good starter wolf; 10; animals/wolf5.png

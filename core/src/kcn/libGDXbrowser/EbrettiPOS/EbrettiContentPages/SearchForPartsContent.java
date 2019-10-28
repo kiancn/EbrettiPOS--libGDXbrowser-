@@ -162,17 +162,20 @@ public class SearchForPartsContent
             fontRenderer.draw(batch, "You are viewing all items as one list.", 150, yAdjustment);
             fontRenderer.draw(batch, "Type a number between 1 and " + numberOfPartListView_Intervals +
                                      " to view another part of the full list.",
-                              xAdjustment,
-                              yAdjustment - 40);
+                              xAdjustment, yAdjustment - 40);
             fontRenderer.draw(batch,
                               "Or type in your own search below. NB Backspace is not implemented.",
-                              xAdjustment,
-                              yAdjustment - 80);
+                              xAdjustment, yAdjustment - 80);
         }
 
         fontRenderer.setColor(Color.GOLD);
         fontRenderer.draw(batch, "Enter you search: " + simpleStringBuilder.receiver.receivedString,
                           50, 50);
+
+        fontRenderer.draw(batch,
+                          "Enter  *.*  to view full list again.",
+                          420, 20);
+
     }
 
     /**
@@ -183,8 +186,6 @@ public class SearchForPartsContent
         int yAdjPerItem = 0;
         int numOfItems = 1 + Math.abs(currentPartListView_HighIndex - currentPartListView_LowIndex);
 
-        fontRenderer.setColor(Color.WHITE);
-        fontRenderer.draw(batch, "Viewing list is " + ebrettiParts.size() + " long.", 200, 20);
 
         if(ebrettiParts.size() > 0)
         {
@@ -214,7 +215,7 @@ public class SearchForPartsContent
 
                 // drawing price text
                 fontRenderer.setColor(Color.GOLD);
-                fontRenderer.draw(batch, "Price" + "" + String.format("%,.2f",
+                fontRenderer.draw(batch, "Price: " + String.format("%,.2f",
                                                                       ebrettiParts.get(i).price),
                                   350,
                                   yAdjGlobal + numOfItems * 50 - (yAdjPerItem * 50) - 20);
@@ -239,6 +240,9 @@ public class SearchForPartsContent
                 yAdjPerItem++;
             }
         }
+        /* text showing current partial list size. drawn at bottom */
+        fontRenderer.setColor(Color.WHITE);
+        fontRenderer.draw(batch, "Viewing list is " + ebrettiParts.size() + " long.", 200, 20);
     }
 
     /**
@@ -252,8 +256,7 @@ public class SearchForPartsContent
         /* a little flavor text for the shopping cart */
         fontRenderer.draw(batch, "Shopping cart overview:", originAdjustment.x, originAdjustment.y + 50);
 
-
-        // iteration
+        // iterating, drawing all parts in cart
         if(shoppingCart.getPartsInCart().size() > 0)
         {
 

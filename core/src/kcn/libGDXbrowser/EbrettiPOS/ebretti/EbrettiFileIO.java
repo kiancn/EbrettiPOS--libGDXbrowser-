@@ -1,9 +1,12 @@
 package kcn.libGDXbrowser.EbrettiPOS.ebretti;
 // by KCN (inheriting from a Crunchy tutorial - link below)
 
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.files.FileHandle;
 import kcn.utility.TO;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -31,14 +34,17 @@ public class EbrettiFileIO
         // trying to load parts, line by line
         try
         {
+
+
             String inputLine;
             bufferedReader = new BufferedReader(new FileReader(csvFilePath));
 
+
             System.out.println("From EbrettiFileIO: buffered reader is ready : " + bufferedReader.ready());
 
-            // How to read file in java line by line?
+            // reading in file line by line, until there are no more
             while((inputLine = bufferedReader.readLine()) != null)
-            {
+            {   // printing to console for debugging
                 System.out.println("Raw CSV data: " + inputLine);
 
                 loadedParts.add(convertCSVLineToEbrettiPart(inputLine, splitString));

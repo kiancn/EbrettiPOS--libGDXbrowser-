@@ -17,7 +17,9 @@ public class MainMenuContent
 
     Texture ebrettiLogo;
 
-    int redEbrettiMoveMod;
+    String companyName = "Ebretti";
+
+    int movingTextModification;
 
 
     public MainMenuContent()
@@ -31,9 +33,7 @@ public class MainMenuContent
 //        ebrettiLogo = new Texture("animals/birthesdyrehandel.png"); // dyrehandel hack
         ebrettiLogo = new Texture("ebretti-logo-278x101.png"); // dyrehandel hack
 
-        redEbrettiMoveMod = -670;
-
-
+        movingTextModification = -670;
     }
 
 
@@ -41,28 +41,27 @@ public class MainMenuContent
     public void drawContent(Batch batch)
     {
         drawWelcomeScreen(batch);
-
 //        batch.draw(ebrettiLogo, 0,0); // dyrehandel hack
     }
 
     private void drawWelcomeScreen(Batch batch)
     {
-        redEbrettiMoveMod += 2;
+        movingTextModification += 2;
+//        batch.draw(ebrettiLogo, (int)(ebrettiLogo.getWidth() * 0.5), 230); // dyrehandel hack
 
-        if(redEbrettiMoveMod > 1000){redEbrettiMoveMod = -670;}
 
-        batch.draw(ebrettiLogo, (int)(ebrettiLogo.getWidth() * 0.5), 230); // dyrehandel hack
+        if(movingTextModification > 1000){movingTextModification = -670;}
 
         font.setColor(Color.GOLD);
-        font.draw(batch, "Ebretti", 15, 600 + redEbrettiMoveMod);
-        font.draw(batch, "Ebretti", 15, 570 + redEbrettiMoveMod);
-        font.draw(batch, "Ebretti", 15, 530 + redEbrettiMoveMod);
-        font.draw(batch, "Ebretti", 15, 480 + redEbrettiMoveMod);
-        font.draw(batch, "Ebretti", 15, 420 + redEbrettiMoveMod);
-        font.draw(batch, "Ebretti", 15, 350 + redEbrettiMoveMod);
-        font.draw(batch, "Ebretti", 15, 280 + redEbrettiMoveMod);
-        font.draw(batch, "Ebretti", 15, 190 + redEbrettiMoveMod);
-        font.draw(batch, "Ebretti", 15, 90 + redEbrettiMoveMod);
+        font.draw(batch, companyName, 15, 600 + movingTextModification);
+        font.draw(batch, companyName, 15, 570 + movingTextModification);
+        font.draw(batch, companyName, 15, 530 + movingTextModification);
+        font.draw(batch, companyName, 15, 480 + movingTextModification);
+        font.draw(batch, companyName, 15, 420 + movingTextModification);
+        font.draw(batch, companyName, 15, 350 + movingTextModification);
+        font.draw(batch, companyName, 15, 280 + movingTextModification);
+        font.draw(batch, companyName, 15, 190 + movingTextModification);
+        font.draw(batch, companyName, 15, 90 + movingTextModification);
 
         batch.draw(mainMenuSplash, 180, 330);
 
@@ -72,15 +71,15 @@ public class MainMenuContent
         font.draw(batch, "Onderdelenprijslijst", 280, 500);
 
         font.setColor(Color.WHITE);
-        font.draw(batch, "Ebretti", 450, 530);
+        font.draw(batch, companyName, 450, 530);
         font.setColor(Color.GOLD);
-        font.draw(batch, "Ebretti", 450, 490);
+        font.draw(batch, companyName, 450, 490);
         font.setColor(Color.GOLDENROD);
-        font.draw(batch, "Ebretti", 450, 430);
+        font.draw(batch, companyName, 450, 430);
         font.setColor(Color.WHITE);
-        font.draw(batch, "Ebretti", 450, 300);
+        font.draw(batch, companyName, 450, 300);
         font.setColor(Color.LIGHT_GRAY);
-        font.draw(batch, "Ebretti", 450, 100);
+        font.draw(batch, companyName, 450, 100);
     }
 
     @Override
