@@ -42,6 +42,7 @@ public class MainMenuContent
     {
         drawWelcomeScreen(batch);
 //        batch.draw(ebrettiLogo, 0,0); // dyrehandel hack
+
     }
 
     private void drawWelcomeScreen(Batch batch)

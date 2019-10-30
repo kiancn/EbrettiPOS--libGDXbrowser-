@@ -3,6 +3,7 @@ package kcn.libGDXbrowser.EbrettiPOS.ebretti;
 import kcn.jNgine.transcendentals.IDCounter;
 
 import java.util.ArrayList;
+
 /* Class instance acts a shopping cart. */
 public class ShoppingCart
 {
@@ -13,7 +14,7 @@ public class ShoppingCart
 
     public ShoppingCart()
     {
-        cartID = IDCounter.getNewId();
+        cartID = IDCounter.getInstance().getNewId();
         partsInCart = new ArrayList<>();
         runningTotal = 0;
     }
@@ -22,15 +23,10 @@ public class ShoppingCart
     {
         return partsInCart;
     }
-
-    public float getRunningTotal()
-    {
-        return runningTotal;
-    }
+    public float getRunningTotal(){ return runningTotal; }
 
     public void addToCart(EbrettiPart part)
     {
-
         partsInCart.add(part);
         runningTotal += part.price;
         System.out.println("Part " + part.ID + "added to cart.");

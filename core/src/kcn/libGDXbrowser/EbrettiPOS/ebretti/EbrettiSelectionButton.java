@@ -7,7 +7,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.math.Vector2;
 
-import kcn.libGDXbrowser.IButton;
+import kcn.libGDXbrowser.button.IButton;
 import kcn.libGDXbrowser.SheetAnimation;
 import kcn.methodreferencing.*;
 import kcn.utility.WindowMath;
@@ -31,8 +31,10 @@ public class EbrettiSelectionButton
     public Vector2 position; // position indicate coordinate of lower left corner of texture
     public String buttonLabelText; // it's what you think it is, ohh yeah
     Texture buttonTexture; // button image
-    // position; it is assumed that the proportions of the animation will fit proportions of the button.
-    SheetAnimation clickedButtonAnimation; // this animation will play when button is clicked at button
+    /* clickedButtonAnimation: this animation will play when button is clicked at button.
+     * It is assumed that the proportions of the animation will fit proportions of the button; and there is
+     * no safe-guard against size-difference, so explore away! */
+    SheetAnimation clickedButtonAnimation;
     BitmapFont fontRenderer; // this baby will render any label you want
     ShoppingCart connectedShoppingCart;
 

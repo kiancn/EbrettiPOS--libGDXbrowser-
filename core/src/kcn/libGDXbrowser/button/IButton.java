@@ -1,4 +1,4 @@
-package kcn.libGDXbrowser;
+package kcn.libGDXbrowser.button;
 // by KCN
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;

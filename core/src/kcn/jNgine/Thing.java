@@ -32,7 +32,7 @@ public abstract class Thing
 
     protected Thing(String name, ISituational parent)
     {
-        ID = IDCounter.getNewId();
+        ID = IDCounter.getInstance().getNewId();
         this.name = name;
         isPrimaryThing = false;
     }
@@ -42,7 +42,7 @@ public abstract class Thing
      **/
     protected Thing(String name)
     {
-        ID = IDCounter.getNewId();
+        ID = IDCounter.getInstance().getNewId();
         this.name = name;
         isPrimaryThing = true;
     }

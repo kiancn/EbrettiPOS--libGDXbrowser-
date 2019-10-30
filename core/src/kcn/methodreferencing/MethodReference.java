@@ -59,6 +59,24 @@ public class MethodReference
         initializeExceptionsArray();
     }
 
+    public MethodReference(Object executingThing, String methodName, Class... parameterTypes)
+    {
+        try
+        {
+            methodToExecute = executingThing.getClass().getMethod(methodName,parameterTypes);
+            methodToExecute.setAccessible(true); /* it should enable */
+        } catch(NoSuchMethodException e)
+        {
+            NoSuchMethodExceptionCaught++;
+        } catch(NullPointerException e)
+        {
+            NullPointerExceptionCaught++;
+        }
+        objectToExecuteMethodOn = executingThing;
+
+        initializeExceptionsArray();
+    }
+
     /*
       RUN METHODS
      */

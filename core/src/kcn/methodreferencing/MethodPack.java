@@ -32,8 +32,6 @@ public class MethodPack
         methods = new ArrayList<>();
         removedMethodsNamesList = new ArrayList<>();
         removedMethodsCount = 0;
-
-
     }
 
     public List<MethodReference> getMethods()

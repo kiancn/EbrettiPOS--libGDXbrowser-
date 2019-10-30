@@ -6,16 +6,16 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import kcn.libGDXbrowser.*;
 import kcn.libGDXbrowser.EbrettiPOS.ebretti.EbrettiPOS;
-import kcn.libGDXbrowser.*;
 
-/** This is the class that hooks up the Ebretti POS / browser to the libGDX DesktopLauncher */
+/**
+ * This is the class that hooks up the Ebretti POS / browser to the libGDX DesktopLauncher
+ */
 public class EbrettiPOSApplicationAdapter
         extends ApplicationAdapter
 {
     SpriteBatch batch; // the batch that draws it all
-
-    SignallingInputProcessor inputProcessor; // THE listener for input during execution (multiplexor will be
-    // implemented)
+    /* THE listener for input during execution (multiplexor will be implemented) */
+    SignallingInputProcessor inputProcessor;
 
     EbrettiPOS posEx;
 
