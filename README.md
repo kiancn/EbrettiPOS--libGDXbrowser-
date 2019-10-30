@@ -7,9 +7,9 @@ To run the example with content, you need to change line 25 in the EbrettiPOS.ja
 The CSV file is in the core/assets-folder in the project:
 - The browser runs fine without the content, but it is a boring experience.
 
-If you never looked at a libGDX application before, my advice is to start with 
-<path on your drive>\desktop\src\kcn\libGDXbrowser\EbrettiPOS\desktop\DesktopLauncher.java
-	and work your way into the heirarchy (ApplicationAdaptor, Browser, menu package, content package; and then EbrettiPOS.java, going to specific menus, content and buttons).
+If you never looked at a libGDX application before, my advice is to start with: 
+<p>[path on your drive]\desktop\src\kcn\libGDXbrowser\EbrettiPOS\desktop\DesktopLauncher.java
+<p>... and work your way into the heirarchy (ApplicationAdaptor, Browser, menu package, content package; and then EbrettiPOS.java, going to specific menus, content and buttons).
 
 Class diagram:
 ![Class diagram](https://github.com/kiancn/EbrettiPOS--libGDXbrowser-/blob/master/Ebretti%20POS%20Class%20Diagram.png)
