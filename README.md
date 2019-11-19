@@ -1,20 +1,23 @@
-# EbrettiPOS
- An example of the libGDXbrowser in the shape an Ebretti Spare Part POS mock up
+# libGDXbrowser - Generation Grind
+A work in progress on a content-display system. Maybe it will go places.
 
-I made this browser to spice an assignment up. It is at a functional alpha stage.
+This 'development project' carries a baseline demo, that will display if you run the project as is. (The other branch has a bigger example; a spare parts catalogue.)
 
-To run the example with content, you need to change line 25 in the EbrettiPOS.java file: the String-attribute at line 25 defines the location of the partsCSV.txt file.
-The CSV file is in the core/assets-folder in the project:
-- The browser runs fine without the content, but it is a boring experience.
+Made to spice a recent assignment up, but I like enough to keep.I made this browser to spice an assignment up. It is in a functional alpha stage.
+
+
 
 If you never looked at a libGDX application before, my advice is to start with: 
+<p>BlueContent and PreparedMenus - these are the actual <i>content</i> being displayed.</p>
 <p>[path on your drive]\desktop\src\kcn\libGDXbrowser\EbrettiPOS\desktop\DesktopLauncher.java
-<p>... and work your way into the heirarchy (ApplicationAdaptor, Browser, menu package, content package; and then EbrettiPOS.java, going to specific menus, content and buttons).
+	then look at the BrowserBase
+<p>...And if you want the full tour, go into the heirarchy like: ApplicationAdaptor, Browser, menu package, content package; going to specific menus, content and buttons (or just go through stuff as you like. Everything in kcn package is written by moi ). 
+	All comments welcome and almost everything is up for improvement.
 
 Class diagram:
-![Class diagram](https://github.com/kiancn/EbrettiPOS--libGDXbrowser-/blob/master/Ebretti%20POS%20Class%20Diagram.png)
+![Class diagram](https://github.com/kiancn/EbrettiPOS--libGDXbrowser-/blob/master/libGDXbrowser-grind-circular-class-diagram.jpg)
 
-Project is built in IntelliJ and I have no idea if it will run (out of the box) in another IDE.
+Project relies on Gradle and should run out of the box - if .
 
 To import a libGDX project into IntelliJ, import whole project folder.
 And to setup a run configuration, this video gives a clear example at linked time (~1 minute long):
