@@ -15,7 +15,7 @@ If you never looked at a libGDX application before, my advice is to start with:
 	All comments welcome and almost everything is up for improvement.
 
 Class diagram:
-![Class diagram](https://github.com/kiancn/EbrettiPOS--libGDXbrowser-/blob/master/libGDXbrowser-grind-circular-class-diagram.jpg)
+![Class diagram](https://raw.githubusercontent.com/kiancn/EbrettiPOS--libGDXbrowser-/libGDXbrower-Grind/libGDXbrowser-grind-circular-class-diagram.jpg)
 
 Project relies on Gradle and should run out of the box - if .
 
