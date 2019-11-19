@@ -47,7 +47,7 @@ public class EbrettiPOSApplicationAdapter
 
         posEx = new EbrettiPOS(inputProcessor);
 
-
+//
 //        exitButton = new ExitButton(Gdx.graphics.getWidth()-80,Gdx.graphics.getHeight()-80);
 //        inputProcessor.getTouchUpCallbackMethods().add(exitButton.methodOnClickEvent);
     }

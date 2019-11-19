@@ -119,7 +119,7 @@ public class Menu
      * <p> - Absolute y-position of each menu bar will be adjusted by the global y adjustment variable.
      * <p> - The relative y-axis position of each bar will be adjusted by the per item y-adjustment
      * variable. The items in question are all the menu-bars in the bars-list.
-     * <p>NB: bars heights are adjusted so that the first bar is placed topmost,
+     * <p>NB: bars heights (y pos) are adjusted so that the first bar is placed topmost,
      * and numerically going up, bars go down.</p>
      */
     public void arrangeMenuBars(float xAdjustment_Global, float xAdjustment_Item,

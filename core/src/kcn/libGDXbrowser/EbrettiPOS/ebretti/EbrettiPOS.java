@@ -22,9 +22,8 @@ public class EbrettiPOS
     ArrayList<EbrettiPart> ebrettiParts; // this list will carry the from-file-loaded spare bike parts
 
     // this path is annoyingly absolute; another solution with relative path is needed
-    private final String pathToPartsCSVFile = "G:\\learningLibGDX\\game003\\core\\assets\\partsCSV.txt";
-    // ANYONE LOOKING: YOU NEED TO CHANGE PATH TO FILE TO MATCH WHERE THE FILE IS ON YOUR DRIVE
-    // Location: '.. <PROJECT FOLDER>\core\assets\partsCSV.txt'
+    private final String pathToPartsCSVFile = "core\\assets\\partsCSV.txt";
+
 
     public EbrettiPOS(SignallingInputProcessor inputProcessor)
     {
@@ -53,7 +52,7 @@ public class EbrettiPOS
         browser.contentManager.getContents().add(new ShoppingCartContent(shoppingCart,inputProcessor));
 
         /*
-         'switching on' main menu; content cannot be added before there is and active menu; a currentMenu
+         'switching on' main menu; content cannot be added before there is an active menu; a currentMenu
          is needed before first frame.
         */
         browser.menuManager.switchToNamedMenu("Main Menu");

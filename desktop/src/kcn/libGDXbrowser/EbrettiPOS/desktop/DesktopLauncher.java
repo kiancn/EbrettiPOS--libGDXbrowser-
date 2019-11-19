@@ -15,7 +15,6 @@ public class DesktopLauncher
 
         config.resizable = false;
         config.title = "Ebretti Onderdelenprijslijst [KEA Opgave af KCN]";
-//        config.title = "Birthes Dyrehandel [KEA Opgave af KCN]";
         config.width = 1900;
         config.height = 1000;
 

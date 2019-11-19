@@ -15,19 +15,29 @@ import kcn.utility.TO;
  * informed of input events.
  * <p></p> * (Be aware that, as such, there is no distinction between
  * left and and right mouse clicks; libGDX was originally designed for android). </p>
+ *
+ * the need to return a boolean is inherited, and return values are not used or meaningful at the moment
  */
 public class SignallingInputProcessor
         implements InputProcessor
 {
     public final MethodPack touchUpCallbackMethods; // pack that will execute when button is released
-    MethodReference pressedKeyCallbackMethod; // methref will execute
-    MethodReference upKeyCallbackMethod;
+    MethodReference pressedKeyCallbackMethod; // these two methodreferences are going to replaced
+    MethodReference upKeyCallbackMethod;        // with method-packs.
     private MethodPack charTypedCallbackMethods;
+
+    // methodpacks
+    MethodPack keyDownCallbackMethods;
+    MethodPack keyUpCallbackMethods;
 
     public SignallingInputProcessor(MethodReference pressedKeyCallbackMethod, MethodReference upKeyCallbackMethod)
     {
         this.pressedKeyCallbackMethod = pressedKeyCallbackMethod;
         this.upKeyCallbackMethod = upKeyCallbackMethod;
+
+        keyDownCallbackMethods = new MethodPack();
+        keyUpCallbackMethods = new MethodPack();
+
 
         charTypedCallbackMethods = new MethodPack();
         touchUpCallbackMethods = new MethodPack();

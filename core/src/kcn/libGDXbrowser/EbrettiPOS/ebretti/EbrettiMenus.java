@@ -28,8 +28,6 @@ public class EbrettiMenus
 
         returnMenu.bars.add(new MenuBar("Go Back", "bar200x40_blueywhity.png",
                                         Gdx.graphics.getWidth()-300  ,300));
-//        returnMenu.bars.add(new MenuBar("Go Back", "buttons/Button10.png",
-//                                        Gdx.graphics.getWidth()-300  ,300));
         return returnMenu;
     }
 

@@ -19,7 +19,7 @@ allprojects {
 
     version = '1.0'
     ext {
-        appName = "my-gdx-game003"
+        appName = "kcn-gdx-libGDXbrowser0.2"
         gdxVersion = '1.9.10'
         roboVMVersion = '2.3.7'
         box2DLightsVersion = '1.4'

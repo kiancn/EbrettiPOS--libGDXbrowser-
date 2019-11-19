@@ -35,14 +35,12 @@ public class EbrettiFileIO
         try
         {
 
-
             String inputLine;
             bufferedReader = new BufferedReader(new FileReader(csvFilePath));
 
-
             System.out.println("From EbrettiFileIO: buffered reader is ready : " + bufferedReader.ready());
 
-            // reading in file line by line, until there are no more
+            // reading in file line by line, until there are no more lines
             while((inputLine = bufferedReader.readLine()) != null)
             {   // printing to console for debugging
                 System.out.println("Raw CSV data: " + inputLine);

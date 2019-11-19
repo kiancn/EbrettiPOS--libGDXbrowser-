@@ -13,7 +13,7 @@ import java.util.ArrayList;
  * - be able to call the 'in-focus' Menu to draw itself
  * - be able to switch to 'named' Menu on command (put named menu 'in focus')
  * <p>
- * - using contains to allow variety between label and menu name
+ *
  */
 public class MenuManager
 {

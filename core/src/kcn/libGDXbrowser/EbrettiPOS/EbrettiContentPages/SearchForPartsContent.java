@@ -426,7 +426,7 @@ public class SearchForPartsContent
 
             if(queryString.length() >= 3)
             {
-                lookUpSearchAndCreateNewPartialLists(queryString);
+                handleSearch(queryString);
             }
 
             mostRecentUserQuery = queryString;
@@ -463,13 +463,23 @@ public class SearchForPartsContent
     }
 
     /* Method 'looks up queried term in full parts list and creates partial list based on the search (and
-    two lists for buttons); method
-     is pulled only from checkForNewUserQuery */
-    private void lookUpSearchAndCreateNewPartialLists(String searchTerm)
+    two lists for buttons); method is pulled only from checkForNewUserQuery */
+    private void handleSearch(String searchTerm)
     {
         // got to lose focus to gain focus on something new
         loseFocus();
 
+        lookUpSearchAndCreateNewPartialLists(searchTerm);
+
+        // update indexes of the new current viewing selection
+        adjustDetailsForCurrentPartList(currentEbrettiParts);
+
+        // when all details are settled, gain focus again
+        gainFocus();
+    }
+    /***/
+    private void lookUpSearchAndCreateNewPartialLists(String searchTerm)
+    {
         currentEbrettiParts = new ArrayList<>();
         currentButtons_Adds = new ArrayList<>();
         currentButtons_Removes = new ArrayList<>();
@@ -496,11 +506,6 @@ public class SearchForPartsContent
                 }
             }
         }
-        // update indexes of the new current viewing selection
-        adjustDetailsForCurrentPartList(currentEbrettiParts);
-
-        // when all details are settled, gain focus again
-        gainFocus();
     }
 
     /**

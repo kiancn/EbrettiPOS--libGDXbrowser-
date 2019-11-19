@@ -34,17 +34,8 @@ public class BuyButton
 
         animationPlayDuration = 4f;
 
-        try
-        {
-            methodOnClickEvent = new MethodReference((Object)this,
-                                                     this.getClass().getMethod("actIfHit_CallbackMethod",
-                                                                               Vector2.class));
-            System.out.println("BuyButton MethodReference is working: " + !methodOnClickEvent.isReferenceBroke());
-
-        } catch(NoSuchMethodException e)
-        {
-            System.out.println("From buy button: Failure to create");
-        }
+        methodOnClickEvent = new MethodReference((Object)this, "actIfHit_CallbackMethod", Vector2.class);
+        System.out.println("BuyButton MethodReference is working: " + !methodOnClickEvent.isReferenceBroke());
 
         durationSinceLastClick = 1000; //a number bigger than
     }
@@ -62,10 +53,10 @@ public class BuyButton
 
             durationSinceLastClick += Gdx.graphics.getDeltaTime();
 
-            for(int i = 0; i<numberOfAnimations; i++)
+            for(int i = 0; i < numberOfAnimations; i++)
             {
                 batch.draw(buttonClickAnimation.getNextFrame(),
-                           i*perAnimationXAdjustment,
+                           i * perAnimationXAdjustment,
                            0);
             }
         }
