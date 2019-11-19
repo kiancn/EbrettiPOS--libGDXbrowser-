@@ -1,8 +1,9 @@
-package kcn.libGDXbrowser.menu;
+package kcn.libgdxbrowser.menu;
 
 import com.badlogic.gdx.graphics.g2d.Batch;
-import kcn.libGDXbrowser.SignallingInputProcessor;
-import kcn.libGDXbrowser.content.ContentManager;
+import kcn.libgdxbrowser.SignallingInputProcessor;
+import kcn.libgdxbrowser.content.ContentManager;
+
 
 import java.util.ArrayList;
 
@@ -124,6 +125,7 @@ public class MenuManager
 //                if(menu.name.contains(menuName))
                 {
                     if(inputProcessor.getTouchUpCallbackMethods().length() > 0)
+//                    if(inputProcessor.getTouchUpCallbackMethods().length() > 0)
                     {
                         inputProcessor.getTouchUpCallbackMethods().remove(currentMenu.touchUpCallbackMethod);
                     }

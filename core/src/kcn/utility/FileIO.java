@@ -51,7 +51,7 @@ public class FileIO
         {
 
             e.printStackTrace();
-        } finally
+        } finally // finally-section will be executed regardless
         {
             if(bufferedReader != null)
             {

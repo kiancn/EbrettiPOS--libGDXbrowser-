@@ -5,7 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * This class will contain static utility methods (class is being developed for the libGDXbrowser)
+ * This class will contain static utility methods:
  */
 public class Grouper
 {

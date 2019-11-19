@@ -1,9 +1,9 @@
-package kcn.libGDXbrowser;
+package kcn.libgdxbrowser;
 
 // by KCN
 
-import kcn.libGDXbrowser.content.ContentManager;
-import kcn.libGDXbrowser.menu.MenuManager;
+import kcn.libgdxbrowser.content.ContentManager;
+import kcn.libgdxbrowser.menu.MenuManager;
 
 public class Browser
 {
@@ -17,6 +17,5 @@ public class Browser
           this.inputProcessor = inputProcessor;
           contentManager = new ContentManager(inputProcessor);
           menuManager = new MenuManager(inputProcessor,contentManager);
-
      }
 }

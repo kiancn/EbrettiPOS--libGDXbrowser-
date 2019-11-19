@@ -1,4 +1,4 @@
-package kcn.libGDXbrowser;
+package kcn.libgdxbrowser;
 
 public class TinyEntity
 {

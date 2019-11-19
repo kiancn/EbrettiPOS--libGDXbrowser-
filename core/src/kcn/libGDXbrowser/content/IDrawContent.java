@@ -1,4 +1,4 @@
-package kcn.libGDXbrowser.content;
+package kcn.libgdxbrowser.content;
 
 import com.badlogic.gdx.graphics.g2d.Batch;
 

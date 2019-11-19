@@ -1,5 +1,6 @@
-package kcn.libGDXbrowser.menu;
+package kcn.libgdxbrowser.menu;
 // by KCN
+
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
@@ -7,9 +8,16 @@ import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.math.Vector2;
-import kcn.libGDXbrowser.SheetAnimation;
-import kcn.libGDXbrowser.TinyEntity;
+import kcn.libgdxbrowser.SheetAnimation;
+import kcn.libgdxbrowser.TinyEntity;
 
+/**
+ * A MenuBar instance represents a single bar on a menu.
+ * <p><b>Goal: </b>Class will be updated to include option to set menu-bar graphic to a desired colour with
+ * a public method accepting a (yet non-existent) Browser Colour - and (the class) setting the right coloured
+ * texture as a response (~ public void/boolean setColor(BrowserColour colour){}).
+ * </p>
+ */
 public class MenuBar
 {
     public float timeSinceLastClick; // float registers delta-time since last click
@@ -20,8 +28,12 @@ public class MenuBar
     private float clickAnimationDuration; // float determines click-animation-duration
     private TinyEntity entity; // keeps position, and name
 
-    private final String standardBarTexture = "bar200x40_blueywhity.png";
+    private String standardBarTexturePath = "ui/blue_button00.png";
 
+    private String standardClickAnimationTexturePath = "ui/anim-1x8-crystal-16-grey.png"; //
+
+
+    private Color labelColor;
 
     public MenuBar(String labelString, String texturePath, int positionX, int positionY)
     {
@@ -35,11 +47,11 @@ public class MenuBar
         fontFormattedText = new BitmapFont();
         fontFormattedText.setColor(Color.CHARTREUSE);
 
+        /* this needs fixing up; both redundant code, and also; also, hard-coded, which is ugly */
+        clickAnimation = new SheetAnimation(standardClickAnimationTexturePath, 8, 1, 0.2f);
 
-        clickAnimation = new SheetAnimation("ebretti-logo-100x36.png", 1, 1, 0.2f);
-
-        clickAnimationDuration = 0.9F;
-        timeSinceLastClick = -1;
+        clickAnimationDuration = 0.9F; // duration click-animation will run
+        timeSinceLastClick = -1; // -1 by tradition, 0 would do. initializing time count
         labelColor = Color.WHITE;
     }
 
@@ -50,15 +62,15 @@ public class MenuBar
 
         this.labelString = labelString;
         // loading texture
-        barTexture = new Texture(Gdx.files.internal(standardBarTexture));
+        barTexture = new Texture(Gdx.files.internal(standardBarTexturePath));
 
         fontFormattedText = new BitmapFont();
         fontFormattedText.setColor(Color.CHARTREUSE);
 
 
-        clickAnimation = new SheetAnimation("ebretti-logo-100x36.png", 1, 1, 0.2f);
+        clickAnimation = new SheetAnimation(standardClickAnimationTexturePath, 8, 1, 0.1f);
 
-        clickAnimationDuration = 1.6F;
+        clickAnimationDuration = 2.1F;
         timeSinceLastClick = -1;
 
         labelColor = Color.WHITE;
@@ -72,10 +84,14 @@ public class MenuBar
         barTexture = new Texture(Gdx.files.internal(TEXTUREPATH));
     }
 
+    private Color getLabelColor(){ return labelColor; }
+    private void setLabelColor(Color labelColor){ this.labelColor = labelColor; }
+
     public TinyEntity getEntity()
     {
         return entity;
     }
+
     // position where text will be drawn. coordinate origin is lower-Edge
     public Vector2 getTextDrawingPosition()
     {
@@ -101,8 +117,10 @@ public class MenuBar
      * - first drawBarTexture, then drawBarText, then drawClickAnimation
      * - no need for a new Batch, just pass an already useful one in */
 
-    /** Method draws bar texture.
-     * <p></p>Method calls draw on supplied batch; drawing barTexture : Method is called from drawMenu.*/
+    /**
+     * Method draws bar texture.
+     * <p></p>Method calls draw on supplied batch; drawing barTexture : Method is called from drawMenu.
+     */
     public void drawBarTexture(Batch batch)
     {
         batch.draw(barTexture,
@@ -110,21 +128,12 @@ public class MenuBar
                    getTextureDrawingPosition().y);
     }
 
-    private Color getLabelColor()
-    {
-        return labelColor;
-    }
 
-    private void setLabelColor(Color labelColor)
-    {
-        this.labelColor = labelColor;
-    }
-
-    private Color labelColor;
-
-    /** Method draws labelString as bar text.
+    /**
+     * Method draws labelString as bar text.
      * <p></p> Method calls draw on BitmapFont object, which uses supplied batch; drawing
-     * fontFormattedText: Method is called from drawMenu.*/
+     * fontFormattedText: Method is called from drawMenu.
+     */
     public GlyphLayout drawBarText(Batch batch)
     {
         fontFormattedText.setColor(labelColor);
@@ -133,7 +142,11 @@ public class MenuBar
                                       getTextDrawingPosition().y);
     }
 
-    /** Method draws an animation at mouse-cursor position for clickAnimationDuration seconds. */
+    /**
+     * Method draws an animation at mouse-cursor position for clickAnimationDuration seconds.
+     */
+    /* this does not belong here... so where? this is mouse related - or IS IT?!?! could be every menu get
+    its own animation*/
     public void drawClickAnimation(Batch batch)
     {
         if(timeSinceLastClick > clickAnimationDuration){timeSinceLastClick = -1;}

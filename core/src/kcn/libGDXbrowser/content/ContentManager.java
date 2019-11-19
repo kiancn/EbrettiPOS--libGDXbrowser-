@@ -1,15 +1,17 @@
-package kcn.libGDXbrowser.content;
+package kcn.libgdxbrowser.content;
 // by KCN
 
 import com.badlogic.gdx.graphics.g2d.Batch;
-import kcn.libGDXbrowser.SignallingInputProcessor;
+import kcn.libgdxbrowser.SignallingInputProcessor;
 
 import java.util.ArrayList;
 /*I realize too late that everything named manager should be named controller - maybe this will be
 corrected soon*/
+
 /**
  * The content manager is able to switch between contents on demand.
- * To achieve this, supply a name identical to the name of a member of contents.
+ * To achieve this, supply a name identical to the name of a member
+ * of contents (to switchToContentByName(String name)).
  * <p>The idea is to new up a contentManager
  * <p>+ add content
  * <p>+ set a content-'page' to currently active before first frame

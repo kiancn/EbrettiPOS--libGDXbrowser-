@@ -1,8 +1,9 @@
-package kcn.libGDXbrowser;
+package kcn.libgdxbrowser;
 // by KCN
+
 import com.badlogic.gdx.Gdx;
-import kcn.methodreferencing.MethodReference;
 import com.badlogic.gdx.Input.Keys;
+import kcn.methodreferencing.CallbackMethod;
 
 /**
  * Class instance will keep track of keyboard input of W, A, S, and D keys;
@@ -20,8 +21,8 @@ public class MoverSimple2D
     public float movementIncrement;
     // methodreferences will be inserted into an input processor,
     // and be executed on event of pressed keys
-    public MethodReference callbackMethodKeyDown;
-    public MethodReference callbackMethodKeyUp;
+    public CallbackMethod callbackMethodKeyDown;
+    public CallbackMethod callbackMethodKeyUp;
     // the supplied entity to which movement is being applied
     TinyEntity entity;
     // boolean switches that help determine if movement is appropriate
@@ -38,13 +39,13 @@ public class MoverSimple2D
 
         try
         {
-            callbackMethodKeyDown = new MethodReference((Object)this,
-                                                        this.getClass().getMethod("actOnKeyDownInput", int.class));
+            callbackMethodKeyDown = new CallbackMethod((Object)this,
+                                                       this.getClass().getMethod("actOnKeyDownInput", int.class));
            // System.out.println("From MoverSimple2D: callbackMethodKeyDown is working " +
             // !callbackMethodKeyDown.isReferenceBroke());
 
-            callbackMethodKeyUp = new MethodReference((Object)this,
-                                                      this.getClass().getMethod("actOnKeyUpInput", int.class));
+            callbackMethodKeyUp = new CallbackMethod((Object)this,
+                                                     this.getClass().getMethod("actOnKeyUpInput", int.class));
            // System.out.println("From MoverSimple2D: callbackMethodKeyUp is working " +
             // !callbackMethodKeyUp.isReferenceBroke());
         } catch(NoSuchMethodException e)

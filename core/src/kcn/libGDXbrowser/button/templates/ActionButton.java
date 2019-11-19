@@ -1,13 +1,13 @@
-package kcn.libGDXbrowser.button.templates;
+package kcn.libgdxbrowser.button.templates;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.math.Vector2;
-import kcn.libGDXbrowser.SheetAnimation;
-import kcn.libGDXbrowser.button.AbstractButton;
-import kcn.libGDXbrowser.button.IButton;
-import kcn.methodreferencing.MethodReference;
+import kcn.libgdxbrowser.SheetAnimation;
+import kcn.libgdxbrowser.button.AbstractButton;
+import kcn.libgdxbrowser.button.IButton;
+import kcn.methodreferencing.CallbackMethod;
 
 /**
  * Instances of ActionButton receives click events and is able of execute any supplied method references.
@@ -19,20 +19,20 @@ public class ActionButton
         implements IButton
 {
     /* path to standard graphic for this button */
-    private final String pathToStandardTexture = "find a candidate";
+    private final String pathToStandardTexture = "ui/green_cross.png";
     /* path to standard animation graphic for this button */
     private final String pathToStandardAnimation = "find a candidate";
     /* this string will be displayed as a label centered on the button graphic */
     public String buttonLabel;
     public Vector2 labelPosition;
     // button graphic
-    Texture buttonTexture;
-    SheetAnimation buttonClickAnimation;
+    public Texture buttonTexture;
+    public SheetAnimation buttonClickAnimation;
 
     /**
      *
      */
-    private ActionButton(int positionX, int positionY, String labelText, String pathToTexture)
+    public ActionButton(int positionX, int positionY, String labelText, String pathToTexture)
     {
 
         this(positionX, positionY, new Texture(pathToTexture));
@@ -47,9 +47,11 @@ public class ActionButton
 
         buttonTexture = BUTTONTEXTURE;
 
-        methodOnClickEvent = new MethodReference((Object)this,
-                                                 "actIfHit_CallbackMethod",
-                                                 Vector2.class);
+        methodOnClickEvent = new CallbackMethod((Object)this,
+                                                "actIfHit_CallbackMethod",
+                                                Vector2.class);
+        System.out.println("ActionButton CallbackMethod is " + ((!methodOnClickEvent.isReferenceBroke()) ?
+                "functional." : "broke."));
 
     }
 

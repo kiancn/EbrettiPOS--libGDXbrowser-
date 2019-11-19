@@ -1,14 +1,15 @@
-package kcn.libGDXbrowser;
+package kcn.libgdxbrowser;
+
 // by KCN
-import kcn.methodreferencing.MethodReference;
-import kcn.utility.TO;
+import kcn.methodreferencing.*;
 
 import java.util.ArrayList;
+
 /**Class instance registers characters typed (through callbackMethod given as parameter to appropriate
  * input processor )*/
 public class InputStringBuilder
 {
-    public MethodReference callbackMethod; // this whole thing works by subscribing the callbackMethod to
+    public CallbackMethod callbackMethod; // this whole thing works by subscribing the callbackMethod to
     // a SignallingInputProcessor
  //   public MethodReference customCallbackMethod; // put your very own method-ref here (MethodPack
 
@@ -28,7 +29,7 @@ public class InputStringBuilder
 
         try
         {
-            callbackMethod = new MethodReference(receiver, receiver.getClass().getMethod(
+            callbackMethod = new CallbackMethod(receiver, receiver.getClass().getMethod(
                     "receiveCharacter_callbackMethod", char.class));
 
             System.out.println("From SimpleStringBuilder: callbackMethod is broke = " + callbackMethod.isReferenceBroke());
@@ -51,7 +52,7 @@ public class InputStringBuilder
                 System.out.println("Recieved lines to far;");
                 for(String line : listOfReceivedStrings)
                 {
-                    System.out.println(TO.blue(line));
+                    System.out.println(line);
                 }
                 // because receivedString needs resetting; creating returnString to hold value typed.
                 returnString = receivedString.toString();

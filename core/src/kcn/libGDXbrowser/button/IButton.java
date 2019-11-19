@@ -1,4 +1,4 @@
-package kcn.libGDXbrowser.button;
+package kcn.libgdxbrowser.button;
 // by KCN
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
@@ -9,7 +9,7 @@ public interface IButton
 {
     public void drawButton(Batch batch);
 
-    public GlyphLayout drawLabel(Batch batch,float x,float y);
+    public GlyphLayout drawLabel(Batch batch, float x, float y);
 
     public void setPosition(int x, int y);
 

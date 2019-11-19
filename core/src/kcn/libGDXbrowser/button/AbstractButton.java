@@ -1,12 +1,10 @@
-package kcn.libGDXbrowser.button;
+package kcn.libgdxbrowser.button;
 
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.math.Vector3;
 import kcn.methodreferencing.MethodPack;
-import kcn.methodreferencing.MethodReference;
+import kcn.methodreferencing.CallbackMethod;
 import kcn.utility.WindowMath;
 
 /**
@@ -23,7 +21,7 @@ public abstract class AbstractButton
     /* these are methods supplied that will be run when button is clicked */
     public final MethodPack callbackMethods;
     // method
-    protected MethodReference methodOnClickEvent;
+    protected CallbackMethod methodOnClickEvent;
     /* private Texture buttonTexture; // texture of button, standard supplied */
     private Vector2 position; // position of button, designating lower left corner of button
     // clicked
@@ -34,12 +32,14 @@ public abstract class AbstractButton
         position = new Vector2(positionX, positionY);
         buttonExtent = new Vector2(buttonExtentX, buttonExtentY);
         callbackMethods = new MethodPack();
+
+        System.out.println("Button exists at " + position + " & pretends to extend: " + buttonExtent);
     }
 
     private Vector2 getButtonExtent(){ return buttonExtent; }
     public MethodPack getCallbackMethods(){ return callbackMethods; }
     public Vector2 getPosition(){ return position; }
-    public MethodReference getMethodOnClickEvent(){ return methodOnClickEvent; }
+    public CallbackMethod getMethodOnClickEvent(){ return methodOnClickEvent; }
 
     /** Method contains all the instructions needed to render button graphic  */
     @Override
@@ -67,6 +67,9 @@ public abstract class AbstractButton
     {
         if(WindowMath.isPointWithinArea(hitPoint, buttonExtent, position))
         {
+            System.out.println("Button position: " + position + " | Extent: " + buttonExtent+ " | Hit " +
+                               "detected at: " +hitPoint);
+
             callbackMethods.run();
         }
     }

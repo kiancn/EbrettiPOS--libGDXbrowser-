@@ -1,14 +1,12 @@
-package kcn.libGDXbrowser.menu;
+package kcn.libgdxbrowser.menu;
 // by KCN
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.math.Vector2;
-
-import kcn.methodreferencing.MethodReference;
-import kcn.utility.WindowMath;
+import kcn.methodreferencing.CallbackMethod;
 import kcn.utility.TO;
+import kcn.utility.WindowMath;
 
 import java.util.ArrayList;
 
@@ -19,7 +17,7 @@ public class Menu
 
     public final ArrayList<MenuBar> bars;
 
-    public MethodReference touchUpCallbackMethod; // mouse-up = touch-up; named for consistency
+    public CallbackMethod touchUpCallbackMethod; // mouse-up = touch-up; named for consistency
 
     MenuManager manager; // the manager is the active context that this menu exists via
 
@@ -33,9 +31,9 @@ public class Menu
         /* making the methodreferences seems cumbersome because fetching the method-objects might throw
         that NoSuchMethodException */
         try
-        {
-            touchUpCallbackMethod = new MethodReference((Object)this,
-                                                        this.getClass().getMethod("isMenuHit",
+        { /**should be reduced to simpler construtor when I get there*/
+            touchUpCallbackMethod = new CallbackMethod((Object)this,
+                                                       this.getClass().getMethod("isMenuHit",
                                                                                   Vector2.class));
             System.out.println("isMenuHit method reference is broke: " + touchUpCallbackMethod.isReferenceBroke());
         } catch(NoSuchMethodException e)
@@ -81,7 +79,7 @@ public class Menu
         return false;
     }
 
-    /* menu bars will be positioned in an equal y-spread from center; and fixed center x */
+    /** menu bars will be positioned in an equal y-spread from center; and fixed center x */
     public void arrangeMenuBars_Center()
     {
         for(int i = 0; i < bars.size(); i++)

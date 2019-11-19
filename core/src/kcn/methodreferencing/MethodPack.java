@@ -21,7 +21,7 @@ adjustments */
  */
 public class MethodPack
 {
-    private List<MethodReference> methods;
+    private List<CallbackMethod> methods;
 
     private boolean automaticErrorChecks; /* value of boolean effects all run method*/
     private int removedMethodsCount;
@@ -34,7 +34,7 @@ public class MethodPack
         removedMethodsCount = 0;
     }
 
-    public List<MethodReference> getMethods()
+    public List<CallbackMethod> getMethods()
     {
         return methods;
     }
@@ -47,7 +47,7 @@ public class MethodPack
     {
         if(automaticErrorChecks){ handleBadReferences(); }
 
-        for(MethodReference method : methods) { method.run(); }
+        for(CallbackMethod method : methods) { method.run(); }
     }
 
     /**
@@ -57,14 +57,15 @@ public class MethodPack
     {
         if(automaticErrorChecks){ handleBadReferences(); }
 
-        for(MethodReference method : methods) { method.run_paramT(value); }
+        for(int i =0; i< methods.size(); i++) { methods.get(i).run(value); } /// important modification
+//        for(CallbackMethod method : methods) { method.run(value); }
     }
 
 
     /**
      * Method adds a MethodReference object to internal list
      **/
-    public boolean add(MethodReference method)
+    public boolean add(CallbackMethod method)
     {
         methods.add(method);
         return true;
@@ -74,7 +75,7 @@ public class MethodPack
      * Method removes a MethodReference object from internal list; simply does nothing and returns false if
      * MethodReference not present.
      **/
-    public boolean remove(MethodReference method)
+    public boolean remove(CallbackMethod method)
     {
         if(methods.contains(method))
         {
@@ -107,7 +108,7 @@ public class MethodPack
      **/
     public void handleBadReferences()
     {
-        for(MethodReference mr : methods)
+        for(CallbackMethod mr : methods)
         {
             if(mr.isReferenceBroke())
             {

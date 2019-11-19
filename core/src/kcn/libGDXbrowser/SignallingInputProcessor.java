@@ -1,9 +1,9 @@
-package kcn.libGDXbrowser;
+package kcn.libgdxbrowser;
 // by KCN
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Input;
+import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.math.Vector2;
 import kcn.methodreferencing.*;
 import kcn.utility.TO;
@@ -15,30 +15,37 @@ import kcn.utility.TO;
  * informed of input events.
  * <p></p> * (Be aware that, as such, there is no distinction between
  * left and and right mouse clicks; libGDX was originally designed for android). </p>
- *
+ * <p>
  * the need to return a boolean is inherited, and return values are not used or meaningful at the moment
  */
 public class SignallingInputProcessor
         implements InputProcessor
 {
-    public final MethodPack touchUpCallbackMethods; // pack that will execute when button is released
-    MethodReference pressedKeyCallbackMethod; // these two methodreferences are going to replaced
-    MethodReference upKeyCallbackMethod;        // with method-packs.
-    private MethodPack charTypedCallbackMethods;
-
     // methodpacks
-    MethodPack keyDownCallbackMethods;
-    MethodPack keyUpCallbackMethods;
+    public final MethodPack touchUpCallbackMethods; // pack that will execute when button is released
+    public final MethodPack keyDownCallbackMethods;
+    public final MethodPack keyUpCallbackMethods;
+    public final MethodPack charTypedCallbackMethods;
+    CallbackMethod pressedKeyCallbackMethod; // these two methodreferences are going to replaced
+    CallbackMethod upKeyCallbackMethod;        // with method-packs.
 
-    public SignallingInputProcessor(MethodReference pressedKeyCallbackMethod, MethodReference upKeyCallbackMethod)
+    public SignallingInputProcessor()
+    {
+        keyDownCallbackMethods = new MethodPack();
+        keyUpCallbackMethods = new MethodPack();
+        charTypedCallbackMethods = new MethodPack();
+        touchUpCallbackMethods = new MethodPack();
+    }
+
+
+
+    public SignallingInputProcessor(CallbackMethod pressedKeyCallbackMethod, CallbackMethod upKeyCallbackMethod)
     {
         this.pressedKeyCallbackMethod = pressedKeyCallbackMethod;
         this.upKeyCallbackMethod = upKeyCallbackMethod;
 
         keyDownCallbackMethods = new MethodPack();
         keyUpCallbackMethods = new MethodPack();
-
-
         charTypedCallbackMethods = new MethodPack();
         touchUpCallbackMethods = new MethodPack();
     }
@@ -64,7 +71,7 @@ public class SignallingInputProcessor
     {
         if(pressedKeyCallbackMethod != null)
         {
-            pressedKeyCallbackMethod.run_paramT(keycode);
+            pressedKeyCallbackMethod.run(keycode);
         }
         return false;
     }
@@ -80,7 +87,7 @@ public class SignallingInputProcessor
     {
         if(pressedKeyCallbackMethod != null)
         {
-            upKeyCallbackMethod.run_paramT(keycode);
+            upKeyCallbackMethod.run(keycode);
         }
         return false;
     }
@@ -117,6 +124,7 @@ public class SignallingInputProcessor
     }
 
     // touch-down (both touch and ) is not implemented; but the method needs to be overriden anyway
+
     /**
      * Called when the screen was touched or a mouse button was pressed. The button parameter will be  on iOS.
      *
@@ -130,6 +138,7 @@ public class SignallingInputProcessor
     public boolean touchDown(int screenX, int screenY, int pointer, int button){ return false; }
 
     // not implemented; but the method needs to be overriden anyway
+
     /**
      * Called when a finger or the mouse was dragged.
      *
@@ -144,6 +153,7 @@ public class SignallingInputProcessor
         return false;
     }
     // not implemented; but the method needs to be overriden anyway
+
     /**
      * Called when the mouse was moved without any buttons being pressed. Will not be called on iOS.
      *
@@ -158,6 +168,7 @@ public class SignallingInputProcessor
     }
 
     // not implemented; but the method needs to be overriden anyway
+
     /**
      * Called when the mouse wheel was scrolled. Will not be called on iOS.
      *
